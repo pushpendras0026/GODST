@@ -1,0 +1,237 @@
+writing results to /home/p_2626/ML_LAB_SEM5/ML_lab/results/15_ablation
+329 jobs were already done before, running the other 31
+finished job 330/360
+finished job 331/360
+finished job 332/360
+finished job 333/360
+finished job 334/360
+finished job 335/360
+finished job 336/360
+finished job 337/360
+finished job 338/360
+finished job 339/360
+finished job 340/360
+finished job 341/360
+finished job 342/360
+finished job 343/360
+finished job 344/360
+finished job 345/360
+finished job 346/360
+finished job 347/360
+finished job 348/360
+finished job 349/360
+finished job 350/360
+finished job 351/360
+finished job 352/360
+finished job 353/360
+finished job 354/360
+finished job 355/360
+finished job 356/360
+finished job 357/360
+finished job 358/360
+finished job 359/360
+finished job 360/360
+{'reference': 'no guess (exact)', 'seconds': 9.234488844871521, 'regret': 0.0, 'maxRegret': 0.0, 'refWrongFraction': None, 'testAccuracy': 0.7312280701754386, 'leaves': 16.5, 'theorem43Checked': 0, 'theorem43Holds': 0, 'stopped': 7}
+{'reference': 'GBDT (paper)', 'seconds': 3.8443996906280518, 'regret': 0.002171029042667416, 'maxRegret': 0.024586692258478426, 'refWrongFraction': 0.22428728070175438, 'testAccuracy': 0.730048159614723, 'leaves': 12.0, 'theorem43Checked': 33, 'theorem43Holds': 33, 'stopped': 4}
+{'reference': 'random forest', 'seconds': 0.36874401569366455, 'regret': 0.015218118800047087, 'maxRegret': 0.05541522712732139, 'refWrongFraction': 0.26096491228070173, 'testAccuracy': 0.7224999999999999, 'leaves': 9.0, 'theorem43Checked': 33, 'theorem43Holds': 33, 'stopped': 0}
+{'reference': 'AdaBoost', 'seconds': 4.4931617975234985, 'regret': 0.0009999999999999992, 'maxRegret': 0.027944625407166135, 'refWrongFraction': 0.21389254385964912, 'testAccuracy': 0.7286363636363636, 'leaves': 12.0, 'theorem43Checked': 33, 'theorem43Holds': 33, 'stopped': 5}
+{'reference': 'ExtraTrees', 'seconds': 0.7993596792221069, 'regret': 0.015022947292935851, 'maxRegret': 0.06143322475570037, 'refWrongFraction': 0.26096491228070173, 'testAccuracy': 0.7240350877192983, 'leaves': 9.0, 'theorem43Checked': 33, 'theorem43Holds': 33, 'stopped': 0}
+{'reference': 'intersection (ours)', 'seconds': 7.490592360496521, 'regret': 0.0001513087128002244, 'maxRegret': 0.004350877192982133, 'refWrongFraction': 0.18614713492364005, 'testAccuracy': 0.7335130718954248, 'leaves': 16.0, 'theorem43Checked': 33, 'theorem43Holds': 33, 'stopped': 6}
+{'reference': 'union (ours)', 'seconds': 0.0004812479019165039, 'regret': 0.030921052631578683, 'maxRegret': 0.11454987212275858, 'refWrongFraction': 0.29103070175438595, 'testAccuracy': 0.7135526315789473, 'leaves': 2.0, 'theorem43Checked': 33, 'theorem43Holds': 33, 'stopped': 0}
+{'reference': 'weak (2 stumps)', 'seconds': 8.404254913330078e-05, 'regret': 0.11454987212275858, 'maxRegret': 0.37381318681318604, 'refWrongFraction': 0.3580162071979026, 'testAccuracy': 0.6469203036534897, 'leaves': 1.0, 'theorem43Checked': 33, 'theorem43Holds': 33, 'stopped': 0}
+{'reference': 'random reference', 'seconds': 8.559226989746094e-05, 'regret': 0.0933243761996192, 'maxRegret': 0.37381318681318604, 'refWrongFraction': 0.38965003821118926, 'testAccuracy': 0.6509775524981897, 'leaves': 1.0, 'theorem43Checked': 33, 'theorem43Holds': 33, 'stopped': 0}
+107 jobs were already done before, running the other 53
+finished job 108/160
+finished job 109/160
+finished job 110/160
+finished job 111/160
+finished job 112/160
+finished job 113/160
+finished job 114/160
+finished job 115/160
+finished job 116/160
+finished job 117/160
+finished job 118/160
+finished job 119/160
+finished job 120/160
+finished job 121/160
+finished job 122/160
+finished job 123/160
+finished job 124/160
+finished job 125/160
+finished job 126/160
+finished job 127/160
+finished job 128/160
+finished job 129/160
+finished job 130/160
+finished job 131/160
+finished job 132/160
+finished job 133/160
+finished job 134/160
+finished job 135/160
+finished job 136/160
+finished job 137/160
+finished job 138/160
+finished job 139/160
+finished job 140/160
+finished job 141/160
+finished job 142/160
+finished job 143/160
+finished job 144/160
+finished job 145/160
+finished job 146/160
+finished job 147/160
+finished job 148/160
+finished job 149/160
+finished job 150/160
+finished job 151/160
+finished job 152/160
+finished job 153/160
+finished job 154/160
+finished job 155/160
+finished job 156/160
+finished job 157/160
+finished job 158/160
+finished job 159/160
+finished job 160/160
+{'dataset': 'breast_cancer', 'guessModel': 'ada', 'binaryFeatures': 11.0, 'seconds': 0.21751880645751953, 'leaves': 16.0, 'trainAccuracy': 0.9978070175438597, 'testAccuracy': 0.9557522123893806, 'stopped': 0}
+{'dataset': 'breast_cancer', 'guessModel': 'extra', 'binaryFeatures': 113.0, 'seconds': 143.49806904792786, 'leaves': 2.0, 'trainAccuracy': 0.9210526315789473, 'testAccuracy': 0.8947368421052632, 'stopped': 5}
+{'dataset': 'breast_cancer', 'guessModel': 'gbdt', 'binaryFeatures': 39.0, 'seconds': 22.9111008644104, 'leaves': 12.0, 'trainAccuracy': 1.0, 'testAccuracy': 0.9298245614035088, 'stopped': 0}
+{'dataset': 'breast_cancer', 'guessModel': 'rf', 'binaryFeatures': 120.0, 'seconds': 149.42556309700012, 'leaves': 5.0, 'trainAccuracy': 0.9340659340659341, 'testAccuracy': 0.8947368421052632, 'stopped': 5}
+{'dataset': 'broward', 'guessModel': 'ada', 'binaryFeatures': 15.0, 'seconds': 0.42940711975097656, 'leaves': 14.0, 'trainAccuracy': 0.6487523992322457, 'testAccuracy': 0.6035805626598465, 'stopped': 0}
+{'dataset': 'broward', 'guessModel': 'extra', 'binaryFeatures': 23.0, 'seconds': 7.051320552825928, 'leaves': 23.0, 'trainAccuracy': 0.6707161125319693, 'testAccuracy': 0.5754475703324808, 'stopped': 0}
+{'dataset': 'broward', 'guessModel': 'gbdt', 'binaryFeatures': 16.0, 'seconds': 0.7423393726348877, 'leaves': 20.0, 'trainAccuracy': 0.6653870761356366, 'testAccuracy': 0.6, 'stopped': 0}
+{'dataset': 'broward', 'guessModel': 'rf', 'binaryFeatures': 23.0, 'seconds': 8.786612510681152, 'leaves': 26.0, 'trainAccuracy': 0.6801023672424824, 'testAccuracy': 0.6010230179028133, 'stopped': 0}
+{'dataset': 'ext_compas', 'guessModel': 'ada', 'binaryFeatures': 18.0, 'seconds': 0.46195077896118164, 'leaves': 7.0, 'trainAccuracy': 0.6863348416289593, 'testAccuracy': 0.6722141823444283, 'stopped': 0}
+{'dataset': 'ext_compas', 'guessModel': 'extra', 'binaryFeatures': 96.0, 'seconds': 149.30953121185303, 'leaves': 9.0, 'trainAccuracy': 0.6854867897213174, 'testAccuracy': 0.6765557163531114, 'stopped': 0}
+{'dataset': 'ext_compas', 'guessModel': 'gbdt', 'binaryFeatures': 34.0, 'seconds': 9.766175985336304, 'leaves': 9.0, 'trainAccuracy': 0.6883821932681867, 'testAccuracy': 0.6777697320782042, 'stopped': 0}
+{'dataset': 'ext_compas', 'guessModel': 'rf', 'binaryFeatures': 45.0, 'seconds': 45.989410400390625, 'leaves': 8.0, 'trainAccuracy': 0.6866968325791856, 'testAccuracy': 0.6792179580014482, 'stopped': 0}
+{'dataset': 'ext_fico', 'guessModel': 'ada', 'binaryFeatures': 19.0, 'seconds': 4.673712968826294, 'leaves': 10.0, 'trainAccuracy': 0.7197322815824071, 'testAccuracy': 0.7122370936902486, 'stopped': 0}
+{'dataset': 'ext_fico', 'guessModel': 'extra', 'binaryFeatures': 37.0, 'seconds': 46.43318057060242, 'leaves': 11.0, 'trainAccuracy': 0.6995338831122266, 'testAccuracy': 0.6926386233269598, 'stopped': 0}
+{'dataset': 'ext_fico', 'guessModel': 'gbdt', 'binaryFeatures': 22.0, 'seconds': 4.684866905212402, 'leaves': 12.0, 'trainAccuracy': 0.7236763475558743, 'testAccuracy': 0.7063605930176949, 'stopped': 0}
+{'dataset': 'ext_fico', 'guessModel': 'rf', 'binaryFeatures': 20.0, 'seconds': 7.523236989974976, 'leaves': 9.0, 'trainAccuracy': 0.7154296641568065, 'testAccuracy': 0.7026768642447419, 'stopped': 0}
+{'dataset': 'german_credit', 'guessModel': 'ada', 'binaryFeatures': 64.0, 'seconds': 155.57446551322937, 'leaves': 14.0, 'trainAccuracy': 0.7575, 'testAccuracy': 0.705, 'stopped': 5}
+{'dataset': 'german_credit', 'guessModel': 'extra', 'binaryFeatures': 64.0, 'seconds': 152.40108704566956, 'leaves': 14.0, 'trainAccuracy': 0.75375, 'testAccuracy': 0.715, 'stopped': 5}
+{'dataset': 'german_credit', 'guessModel': 'gbdt', 'binaryFeatures': 53.0, 'seconds': 149.27675437927246, 'leaves': 17.0, 'trainAccuracy': 0.78125, 'testAccuracy': 0.725, 'stopped': 4}
+{'dataset': 'german_credit', 'guessModel': 'rf', 'binaryFeatures': 64.0, 'seconds': 157.98301434516907, 'leaves': 15.0, 'trainAccuracy': 0.755, 'testAccuracy': 0.72, 'stopped': 5}
+{'dataset': 'pima', 'guessModel': 'ada', 'binaryFeatures': 62.0, 'seconds': 170.97906827926636, 'leaves': 15.0, 'trainAccuracy': 0.8094462540716613, 'testAccuracy': 0.7142857142857143, 'stopped': 5}
+{'dataset': 'pima', 'guessModel': 'extra', 'binaryFeatures': 113.0, 'seconds': 169.19289827346802, 'leaves': 4.0, 'trainAccuracy': 0.7638436482084691, 'testAccuracy': 0.7272727272727273, 'stopped': 3}
+{'dataset': 'pima', 'guessModel': 'gbdt', 'binaryFeatures': 57.0, 'seconds': 152.42541527748108, 'leaves': 29.0, 'trainAccuracy': 0.8729641693811075, 'testAccuracy': 0.7467532467532467, 'stopped': 3}
+{'dataset': 'pima', 'guessModel': 'rf', 'binaryFeatures': 104.0, 'seconds': 177.74800395965576, 'leaves': 14.0, 'trainAccuracy': 0.7654723127035831, 'testAccuracy': 0.7124183006535948, 'stopped': 5}
+{'dataset': 'takeaway', 'guessModel': 'ada', 'binaryFeatures': 31.0, 'seconds': 21.33080768585205, 'leaves': 20.0, 'trainAccuracy': 0.7839912280701754, 'testAccuracy': 0.743421052631579, 'stopped': 0}
+{'dataset': 'takeaway', 'guessModel': 'extra', 'binaryFeatures': 1.0, 'seconds': 5.888938903808594e-05, 'leaves': 1.0, 'trainAccuracy': 0.7379385964912281, 'testAccuracy': 0.7368421052631579, 'stopped': 0}
+{'dataset': 'takeaway', 'guessModel': 'gbdt', 'binaryFeatures': 32.0, 'seconds': 23.902007818222046, 'leaves': 22.0, 'trainAccuracy': 0.7867324561403509, 'testAccuracy': 0.7478070175438597, 'stopped': 0}
+{'dataset': 'takeaway', 'guessModel': 'rf', 'binaryFeatures': 1.0, 'seconds': 0.00011324882507324219, 'leaves': 1.0, 'trainAccuracy': 0.7379385964912281, 'testAccuracy': 0.7368421052631579, 'stopped': 0}
+{'dataset': 'titanic', 'guessModel': 'ada', 'binaryFeatures': 59.0, 'seconds': 66.07146072387695, 'leaves': 27.0, 'trainAccuracy': 0.8657074340527577, 'testAccuracy': 0.7990430622009569, 'stopped': 0}
+{'dataset': 'titanic', 'guessModel': 'extra', 'binaryFeatures': 72.0, 'seconds': 10.498497009277344, 'leaves': 17.0, 'trainAccuracy': 0.8393285371702638, 'testAccuracy': 0.7884615384615384, 'stopped': 0}
+{'dataset': 'titanic', 'guessModel': 'gbdt', 'binaryFeatures': 26.0, 'seconds': 1.5143632888793945, 'leaves': 18.0, 'trainAccuracy': 0.8453237410071942, 'testAccuracy': 0.7990430622009569, 'stopped': 0}
+{'dataset': 'titanic', 'guessModel': 'rf', 'binaryFeatures': 53.0, 'seconds': 36.95245838165283, 'leaves': 23.0, 'trainAccuracy': 0.8513189448441247, 'testAccuracy': 0.7884615384615384, 'stopped': 0}
+finished job 1/90
+finished job 2/90
+finished job 3/90
+finished job 4/90
+finished job 5/90
+finished job 6/90
+finished job 7/90
+finished job 8/90
+finished job 9/90
+finished job 10/90
+finished job 11/90
+finished job 12/90
+finished job 13/90
+finished job 14/90
+finished job 15/90
+finished job 16/90
+finished job 17/90
+finished job 18/90
+finished job 19/90
+finished job 20/90
+finished job 21/90
+finished job 22/90
+finished job 23/90
+finished job 24/90
+finished job 25/90
+finished job 26/90
+finished job 27/90
+finished job 28/90
+finished job 29/90
+finished job 30/90
+finished job 31/90
+finished job 32/90
+finished job 33/90
+finished job 34/90
+finished job 35/90
+finished job 36/90
+finished job 37/90
+finished job 38/90
+finished job 39/90
+finished job 40/90
+finished job 41/90
+finished job 42/90
+finished job 43/90
+finished job 44/90
+finished job 45/90
+finished job 46/90
+finished job 47/90
+finished job 48/90
+finished job 49/90
+finished job 50/90
+finished job 51/90
+finished job 52/90
+finished job 53/90
+finished job 54/90
+finished job 55/90
+finished job 56/90
+finished job 57/90
+finished job 58/90
+finished job 59/90
+finished job 60/90
+finished job 61/90
+finished job 62/90
+finished job 63/90
+finished job 64/90
+finished job 65/90
+finished job 66/90
+finished job 67/90
+finished job 68/90
+finished job 69/90
+finished job 70/90
+finished job 71/90
+finished job 72/90
+finished job 73/90
+finished job 74/90
+finished job 75/90
+finished job 76/90
+finished job 77/90
+finished job 78/90
+finished job 79/90
+finished job 80/90
+finished job 81/90
+finished job 82/90
+finished job 83/90
+finished job 84/90
+finished job 85/90
+finished job 86/90
+finished job 87/90
+finished job 88/90
+finished job 89/90
+finished job 90/90
+{'dataset': 'breast_cancer', 'warmStart': False, 'seconds': 9.088756799697876, 'objective': 0.048186813186813185, 'testAccuracy': 0.9473684210526315, 'leaves': 6.0, 'stopped': 0}
+{'dataset': 'breast_cancer', 'warmStart': True, 'seconds': 11.092825889587402, 'objective': 0.048186813186813185, 'testAccuracy': 0.9473684210526315, 'leaves': 6.0, 'stopped': 0}
+{'dataset': 'broward', 'warmStart': False, 'seconds': 0.14563345909118652, 'objective': 0.3890435060780565, 'testAccuracy': 0.5974358974358974, 'leaves': 5.0, 'stopped': 0}
+{'dataset': 'broward', 'warmStart': True, 'seconds': 0.031139135360717773, 'objective': 0.3890435060780565, 'testAccuracy': 0.5974358974358974, 'leaves': 5.0, 'stopped': 0}
+{'dataset': 'ext_compas', 'warmStart': False, 'seconds': 2.1554806232452393, 'objective': 0.3438563155989867, 'testAccuracy': 0.6734250543084721, 'leaves': 5.0, 'stopped': 0}
+{'dataset': 'ext_compas', 'warmStart': True, 'seconds': 2.084548234939575, 'objective': 0.3438563155989867, 'testAccuracy': 0.6734250543084721, 'leaves': 5.0, 'stopped': 0}
+{'dataset': 'ext_fico', 'warmStart': False, 'seconds': 0.053761959075927734, 'objective': 0.30863391896736464, 'testAccuracy': 0.7031548757170172, 'leaves': 2.0, 'stopped': 0}
+{'dataset': 'ext_fico', 'warmStart': True, 'seconds': 0.050826072692871094, 'objective': 0.30863391896736464, 'testAccuracy': 0.7031548757170172, 'leaves': 2.0, 'stopped': 0}
+{'dataset': 'german_credit', 'warmStart': False, 'seconds': 126.59638571739197, 'objective': 0.2600000000000002, 'testAccuracy': 0.725, 'leaves': 9.0, 'stopped': 3}
+{'dataset': 'german_credit', 'warmStart': True, 'seconds': 126.20936584472656, 'objective': 0.2600000000000002, 'testAccuracy': 0.725, 'leaves': 9.0, 'stopped': 3}
+{'dataset': 'pima', 'warmStart': False, 'seconds': 110.48192596435547, 'objective': 0.2222964169381108, 'testAccuracy': 0.7337662337662337, 'leaves': 8.0, 'stopped': 1}
+{'dataset': 'pima', 'warmStart': True, 'seconds': 108.47891688346863, 'objective': 0.2222964169381108, 'testAccuracy': 0.7337662337662337, 'leaves': 8.0, 'stopped': 1}
+{'dataset': 'spambase', 'warmStart': False, 'seconds': 92.39694452285767, 'objective': 0.1848369565217394, 'testAccuracy': 0.8456521739130435, 'leaves': 6.0, 'stopped': 5}
+{'dataset': 'spambase', 'warmStart': True, 'seconds': 91.23589968681335, 'objective': 0.13241782124422624, 'testAccuracy': 0.9, 'leaves': 6.0, 'stopped': 5}
+{'dataset': 'takeaway', 'warmStart': False, 'seconds': 0.00966334342956543, 'objective': 0.26706140350876983, 'testAccuracy': 0.7368421052631579, 'leaves': 1.0, 'stopped': 0}
+{'dataset': 'takeaway', 'warmStart': True, 'seconds': 0.011202573776245117, 'objective': 0.26706140350876983, 'testAccuracy': 0.7368421052631579, 'leaves': 1.0, 'stopped': 0}
+{'dataset': 'titanic', 'warmStart': False, 'seconds': 0.8284573554992676, 'objective': 0.2038609112709832, 'testAccuracy': 0.8086124401913876, 'leaves': 6.0, 'stopped': 0}
+{'dataset': 'titanic', 'warmStart': True, 'seconds': 0.653146505355835, 'objective': 0.2038609112709832, 'testAccuracy': 0.8086124401913876, 'leaves': 6.0, 'stopped': 0}
+stage ablation finished in 5742.5 seconds

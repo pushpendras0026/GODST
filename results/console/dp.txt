@@ -1,0 +1,87 @@
+writing results to /home/p_2626/ML_LAB_SEM5/ML_lab/results/02_dynamic_prog
+{'dataset': 'monk1', 'depth': 1, 'method': 'recursion', 'seconds': 0.0, 'calls': 23, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 33, 'trainAccuracy': 0.7339, 'leaves': 2, 'sameAsBruteForce': True}
+{'dataset': 'monk1', 'depth': 1, 'method': 'memo', 'seconds': 0.0, 'calls': 23, 'subproblemsSaved': 23, 'timedOut': False, 'mistakes': 33, 'trainAccuracy': 0.7339, 'leaves': 2, 'sameAsBruteForce': True}
+{'dataset': 'monk1', 'depth': 2, 'method': 'recursion', 'seconds': 0.0, 'calls': 423, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 22, 'trainAccuracy': 0.8226, 'leaves': 4, 'sameAsBruteForce': True}
+{'dataset': 'monk1', 'depth': 2, 'method': 'memo', 'seconds': 0.0, 'calls': 234, 'subproblemsSaved': 234, 'timedOut': False, 'mistakes': 22, 'trainAccuracy': 0.8226, 'leaves': 4, 'sameAsBruteForce': True}
+{'dataset': 'monk1', 'depth': 3, 'method': 'recursion', 'seconds': 0.003, 'calls': 6571, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 11, 'trainAccuracy': 0.9113, 'leaves': 5}
+{'dataset': 'monk1', 'depth': 3, 'method': 'memo', 'seconds': 0.002, 'calls': 1366, 'subproblemsSaved': 1366, 'timedOut': False, 'mistakes': 11, 'trainAccuracy': 0.9113, 'leaves': 5}
+{'dataset': 'monk1', 'depth': 4, 'method': 'recursion', 'seconds': 0.047, 'calls': 82895, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 3, 'trainAccuracy': 0.9758, 'leaves': 10}
+{'dataset': 'monk1', 'depth': 4, 'method': 'memo', 'seconds': 0.009, 'calls': 4761, 'subproblemsSaved': 4761, 'timedOut': False, 'mistakes': 3, 'trainAccuracy': 0.9758, 'leaves': 10}
+{'dataset': 'monk1', 'depth': 5, 'method': 'recursion', 'seconds': 0.514, 'calls': 790543, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 0, 'trainAccuracy': 1.0, 'leaves': 8}
+{'dataset': 'monk1', 'depth': 5, 'method': 'memo', 'seconds': 0.059, 'calls': 10303, 'subproblemsSaved': 10303, 'timedOut': False, 'mistakes': 0, 'trainAccuracy': 1.0, 'leaves': 8}
+{'dataset': 'monk1', 'depth': 6, 'method': 'recursion', 'seconds': 3.715, 'calls': 5446243, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 0, 'trainAccuracy': 1.0, 'leaves': 8}
+{'dataset': 'monk1', 'depth': 6, 'method': 'memo', 'seconds': 0.038, 'calls': 15805, 'subproblemsSaved': 15805, 'timedOut': False, 'mistakes': 0, 'trainAccuracy': 1.0, 'leaves': 8}
+{'dataset': 'monk2', 'depth': 1, 'method': 'recursion', 'seconds': 0.0, 'calls': 23, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 64, 'trainAccuracy': 0.6213, 'leaves': 1, 'sameAsBruteForce': True}
+{'dataset': 'monk2', 'depth': 1, 'method': 'memo', 'seconds': 0.0, 'calls': 23, 'subproblemsSaved': 23, 'timedOut': False, 'mistakes': 64, 'trainAccuracy': 0.6213, 'leaves': 1, 'sameAsBruteForce': True}
+{'dataset': 'monk2', 'depth': 2, 'method': 'recursion', 'seconds': 0.0, 'calls': 439, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 57, 'trainAccuracy': 0.6627, 'leaves': 4, 'sameAsBruteForce': True}
+{'dataset': 'monk2', 'depth': 2, 'method': 'memo', 'seconds': 0.0, 'calls': 234, 'subproblemsSaved': 234, 'timedOut': False, 'mistakes': 57, 'trainAccuracy': 0.6627, 'leaves': 4, 'sameAsBruteForce': True}
+{'dataset': 'monk2', 'depth': 3, 'method': 'recursion', 'seconds': 0.003, 'calls': 7099, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 41, 'trainAccuracy': 0.7574, 'leaves': 7}
+{'dataset': 'monk2', 'depth': 3, 'method': 'memo', 'seconds': 0.002, 'calls': 1370, 'subproblemsSaved': 1370, 'timedOut': False, 'mistakes': 41, 'trainAccuracy': 0.7574, 'leaves': 7}
+{'dataset': 'monk2', 'depth': 4, 'method': 'recursion', 'seconds': 0.051, 'calls': 93283, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 30, 'trainAccuracy': 0.8225, 'leaves': 15}
+{'dataset': 'monk2', 'depth': 4, 'method': 'memo', 'seconds': 0.008, 'calls': 5009, 'subproblemsSaved': 5009, 'timedOut': False, 'mistakes': 30, 'trainAccuracy': 0.8225, 'leaves': 15}
+{'dataset': 'monk2', 'depth': 5, 'method': 'recursion', 'seconds': 0.558, 'calls': 956287, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 14, 'trainAccuracy': 0.9172, 'leaves': 27}
+{'dataset': 'monk2', 'depth': 5, 'method': 'memo', 'seconds': 0.042, 'calls': 11877, 'subproblemsSaved': 11877, 'timedOut': False, 'mistakes': 14, 'trainAccuracy': 0.9172, 'leaves': 27}
+{'dataset': 'monk2', 'depth': 6, 'method': 'recursion', 'seconds': 4.828, 'calls': 7395971, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 0, 'trainAccuracy': 1.0, 'leaves': 33}
+{'dataset': 'monk2', 'depth': 6, 'method': 'memo', 'seconds': 0.058, 'calls': 19942, 'subproblemsSaved': 19942, 'timedOut': False, 'mistakes': 0, 'trainAccuracy': 1.0, 'leaves': 33}
+{'dataset': 'monk3', 'depth': 1, 'method': 'recursion', 'seconds': 0.0, 'calls': 23, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 40, 'trainAccuracy': 0.6721, 'leaves': 2, 'sameAsBruteForce': True}
+{'dataset': 'monk3', 'depth': 1, 'method': 'memo', 'seconds': 0.0, 'calls': 23, 'subproblemsSaved': 23, 'timedOut': False, 'mistakes': 40, 'trainAccuracy': 0.6721, 'leaves': 2, 'sameAsBruteForce': True}
+{'dataset': 'monk3', 'depth': 2, 'method': 'recursion', 'seconds': 0.0, 'calls': 439, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 27, 'trainAccuracy': 0.7787, 'leaves': 3, 'sameAsBruteForce': True}
+{'dataset': 'monk3', 'depth': 2, 'method': 'memo', 'seconds': 0.0, 'calls': 234, 'subproblemsSaved': 234, 'timedOut': False, 'mistakes': 27, 'trainAccuracy': 0.7787, 'leaves': 3, 'sameAsBruteForce': True}
+{'dataset': 'monk3', 'depth': 3, 'method': 'recursion', 'seconds': 0.005, 'calls': 7019, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 17, 'trainAccuracy': 0.8607, 'leaves': 7}
+{'dataset': 'monk3', 'depth': 3, 'method': 'memo', 'seconds': 0.003, 'calls': 1364, 'subproblemsSaved': 1364, 'timedOut': False, 'mistakes': 17, 'trainAccuracy': 0.8607, 'leaves': 7}
+{'dataset': 'monk3', 'depth': 4, 'method': 'recursion', 'seconds': 0.053, 'calls': 89649, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 8, 'trainAccuracy': 0.9344, 'leaves': 13}
+{'dataset': 'monk3', 'depth': 4, 'method': 'memo', 'seconds': 0.008, 'calls': 4773, 'subproblemsSaved': 4773, 'timedOut': False, 'mistakes': 8, 'trainAccuracy': 0.9344, 'leaves': 13}
+{'dataset': 'monk3', 'depth': 5, 'method': 'recursion', 'seconds': 0.588, 'calls': 868223, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 0, 'trainAccuracy': 1.0, 'leaves': 20}
+{'dataset': 'monk3', 'depth': 5, 'method': 'memo', 'seconds': 0.045, 'calls': 10480, 'subproblemsSaved': 10480, 'timedOut': False, 'mistakes': 0, 'trainAccuracy': 1.0, 'leaves': 20}
+{'dataset': 'monk3', 'depth': 6, 'method': 'recursion', 'seconds': 4.09, 'calls': 6090747, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 0, 'trainAccuracy': 1.0, 'leaves': 20}
+{'dataset': 'monk3', 'depth': 6, 'method': 'memo', 'seconds': 0.068, 'calls': 16355, 'subproblemsSaved': 16355, 'timedOut': False, 'mistakes': 0, 'trainAccuracy': 1.0, 'leaves': 20}
+{'dataset': 'tictactoe', 'depth': 1, 'method': 'recursion', 'seconds': 0.0, 'calls': 37, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 288, 'trainAccuracy': 0.6994, 'leaves': 2, 'sameAsBruteForce': True}
+{'dataset': 'tictactoe', 'depth': 1, 'method': 'memo', 'seconds': 0.0, 'calls': 37, 'subproblemsSaved': 37, 'timedOut': False, 'mistakes': 288, 'trainAccuracy': 0.6994, 'leaves': 2, 'sameAsBruteForce': True}
+{'dataset': 'tictactoe', 'depth': 2, 'method': 'recursion', 'seconds': 0.001, 'calls': 1225, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 282, 'trainAccuracy': 0.7056, 'leaves': 3, 'sameAsBruteForce': True}
+{'dataset': 'tictactoe', 'depth': 2, 'method': 'memo', 'seconds': 0.001, 'calls': 640, 'subproblemsSaved': 640, 'timedOut': False, 'mistakes': 282, 'trainAccuracy': 0.7056, 'leaves': 3, 'sameAsBruteForce': True}
+{'dataset': 'tictactoe', 'depth': 3, 'method': 'recursion', 'seconds': 0.019, 'calls': 36937, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 216, 'trainAccuracy': 0.7745, 'leaves': 7}
+{'dataset': 'tictactoe', 'depth': 3, 'method': 'memo', 'seconds': 0.01, 'calls': 6736, 'subproblemsSaved': 6736, 'timedOut': False, 'mistakes': 216, 'trainAccuracy': 0.7745, 'leaves': 7}
+{'dataset': 'tictactoe', 'depth': 4, 'method': 'recursion', 'seconds': 0.67, 'calls': 1001161, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 137, 'trainAccuracy': 0.857, 'leaves': 13}
+{'dataset': 'tictactoe', 'depth': 4, 'method': 'memo', 'seconds': 0.196, 'calls': 47932, 'subproblemsSaved': 47932, 'timedOut': False, 'mistakes': 137, 'trainAccuracy': 0.857, 'leaves': 13}
+{'dataset': 'tictactoe', 'depth': 5, 'method': 'recursion', 'seconds': 16.37, 'calls': 23713801, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 63, 'trainAccuracy': 0.9342, 'leaves': 24}
+{'dataset': 'tictactoe', 'depth': 5, 'method': 'memo', 'seconds': 1.081, 'calls': 234948, 'subproblemsSaved': 234948, 'timedOut': False, 'mistakes': 63, 'trainAccuracy': 0.9342, 'leaves': 24}
+{'dataset': 'tictactoe', 'depth': 6, 'method': 'recursion', 'seconds': 300.001, 'calls': 444369000, 'subproblemsSaved': 0, 'timedOut': True, 'mistakes': None}
+{'dataset': 'tictactoe', 'depth': 6, 'method': 'memo', 'seconds': 4.258, 'calls': 778576, 'subproblemsSaved': 778576, 'timedOut': False, 'mistakes': 12, 'trainAccuracy': 0.9875, 'leaves': 41}
+{'dataset': 'car', 'depth': 1, 'method': 'recursion', 'seconds': 0.0, 'calls': 31, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 496, 'trainAccuracy': 0.713, 'leaves': 2, 'sameAsBruteForce': True}
+{'dataset': 'car', 'depth': 1, 'method': 'memo', 'seconds': 0.0, 'calls': 31, 'subproblemsSaved': 31, 'timedOut': False, 'mistakes': 496, 'trainAccuracy': 0.713, 'leaves': 2, 'sameAsBruteForce': True}
+{'dataset': 'car', 'depth': 2, 'method': 'recursion', 'seconds': 0.001, 'calls': 771, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 250, 'trainAccuracy': 0.8553, 'leaves': 3, 'sameAsBruteForce': True}
+{'dataset': 'car', 'depth': 2, 'method': 'memo', 'seconds': 0.001, 'calls': 429, 'subproblemsSaved': 429, 'timedOut': False, 'mistakes': 250, 'trainAccuracy': 0.8553, 'leaves': 3, 'sameAsBruteForce': True}
+{'dataset': 'car', 'depth': 3, 'method': 'recursion', 'seconds': 0.021, 'calls': 16647, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 224, 'trainAccuracy': 0.8704, 'leaves': 5}
+{'dataset': 'car', 'depth': 3, 'method': 'memo', 'seconds': 0.007, 'calls': 3431, 'subproblemsSaved': 3431, 'timedOut': False, 'mistakes': 224, 'trainAccuracy': 0.8704, 'leaves': 5}
+{'dataset': 'car', 'depth': 4, 'method': 'recursion', 'seconds': 0.243, 'calls': 310011, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 180, 'trainAccuracy': 0.8958, 'leaves': 9}
+{'dataset': 'car', 'depth': 4, 'method': 'memo', 'seconds': 0.039, 'calls': 17614, 'subproblemsSaved': 17614, 'timedOut': False, 'mistakes': 180, 'trainAccuracy': 0.8958, 'leaves': 9}
+{'dataset': 'car', 'depth': 5, 'method': 'recursion', 'seconds': 3.443, 'calls': 4928319, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 146, 'trainAccuracy': 0.9155, 'leaves': 19}
+{'dataset': 'car', 'depth': 5, 'method': 'memo', 'seconds': 0.188, 'calls': 61859, 'subproblemsSaved': 61859, 'timedOut': False, 'mistakes': 146, 'trainAccuracy': 0.9155, 'leaves': 19}
+{'dataset': 'car', 'depth': 6, 'method': 'recursion', 'seconds': 50.476, 'calls': 66287039, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 96, 'trainAccuracy': 0.9444, 'leaves': 30}
+{'dataset': 'car', 'depth': 6, 'method': 'memo', 'seconds': 0.637, 'calls': 156989, 'subproblemsSaved': 156989, 'timedOut': False, 'mistakes': 96, 'trainAccuracy': 0.9444, 'leaves': 30}
+{'dataset': 'compas_binary', 'depth': 1, 'method': 'recursion', 'seconds': 0.0, 'calls': 25, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 2494, 'trainAccuracy': 0.6389, 'leaves': 2, 'sameAsBruteForce': True}
+{'dataset': 'compas_binary', 'depth': 1, 'method': 'memo', 'seconds': 0.0, 'calls': 25, 'subproblemsSaved': 25, 'timedOut': False, 'mistakes': 2494, 'trainAccuracy': 0.6389, 'leaves': 2, 'sameAsBruteForce': True}
+{'dataset': 'compas_binary', 'depth': 2, 'method': 'recursion', 'seconds': 0.001, 'calls': 493, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 2333, 'trainAccuracy': 0.6622, 'leaves': 4, 'sameAsBruteForce': True}
+{'dataset': 'compas_binary', 'depth': 2, 'method': 'memo', 'seconds': 0.001, 'calls': 257, 'subproblemsSaved': 257, 'timedOut': False, 'mistakes': 2333, 'trainAccuracy': 0.6622, 'leaves': 4, 'sameAsBruteForce': True}
+{'dataset': 'compas_binary', 'depth': 3, 'method': 'recursion', 'seconds': 0.008, 'calls': 7601, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 2272, 'trainAccuracy': 0.6711, 'leaves': 8}
+{'dataset': 'compas_binary', 'depth': 3, 'method': 'memo', 'seconds': 0.006, 'calls': 1327, 'subproblemsSaved': 1327, 'timedOut': False, 'mistakes': 2272, 'trainAccuracy': 0.6711, 'leaves': 8}
+{'dataset': 'compas_binary', 'depth': 4, 'method': 'recursion', 'seconds': 0.12, 'calls': 91989, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 2250, 'trainAccuracy': 0.6742, 'leaves': 14}
+{'dataset': 'compas_binary', 'depth': 4, 'method': 'memo', 'seconds': 0.024, 'calls': 3982, 'subproblemsSaved': 3982, 'timedOut': False, 'mistakes': 2250, 'trainAccuracy': 0.6742, 'leaves': 14}
+{'dataset': 'compas_binary', 'depth': 5, 'method': 'recursion', 'seconds': 1.312, 'calls': 876021, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 2233, 'trainAccuracy': 0.6767, 'leaves': 21}
+{'dataset': 'compas_binary', 'depth': 5, 'method': 'memo', 'seconds': 0.099, 'calls': 8004, 'subproblemsSaved': 8004, 'timedOut': False, 'mistakes': 2233, 'trainAccuracy': 0.6767, 'leaves': 21}
+{'dataset': 'compas_binary', 'depth': 6, 'method': 'recursion', 'seconds': 10.537, 'calls': 6545321, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 2228, 'trainAccuracy': 0.6774, 'leaves': 25}
+{'dataset': 'compas_binary', 'depth': 6, 'method': 'memo', 'seconds': 0.132, 'calls': 12291, 'subproblemsSaved': 12291, 'timedOut': False, 'mistakes': 2228, 'trainAccuracy': 0.6774, 'leaves': 25}
+{'dataset': 'bar7', 'depth': 1, 'method': 'recursion', 'seconds': 0.0, 'calls': 29, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 677, 'trainAccuracy': 0.6461, 'leaves': 2, 'sameAsBruteForce': True}
+{'dataset': 'bar7', 'depth': 1, 'method': 'memo', 'seconds': 0.0, 'calls': 29, 'subproblemsSaved': 29, 'timedOut': False, 'mistakes': 677, 'trainAccuracy': 0.6461, 'leaves': 2, 'sameAsBruteForce': True}
+{'dataset': 'bar7', 'depth': 2, 'method': 'recursion', 'seconds': 0.001, 'calls': 633, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 584, 'trainAccuracy': 0.6947, 'leaves': 4, 'sameAsBruteForce': True}
+{'dataset': 'bar7', 'depth': 2, 'method': 'memo', 'seconds': 0.001, 'calls': 313, 'subproblemsSaved': 313, 'timedOut': False, 'mistakes': 584, 'trainAccuracy': 0.6947, 'leaves': 4, 'sameAsBruteForce': True}
+{'dataset': 'bar7', 'depth': 3, 'method': 'recursion', 'seconds': 0.008, 'calls': 10729, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 553, 'trainAccuracy': 0.7109, 'leaves': 8}
+{'dataset': 'bar7', 'depth': 3, 'method': 'memo', 'seconds': 0.004, 'calls': 1639, 'subproblemsSaved': 1639, 'timedOut': False, 'mistakes': 553, 'trainAccuracy': 0.7109, 'leaves': 8}
+{'dataset': 'bar7', 'depth': 4, 'method': 'recursion', 'seconds': 0.114, 'calls': 147913, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 523, 'trainAccuracy': 0.7266, 'leaves': 13}
+{'dataset': 'bar7', 'depth': 4, 'method': 'memo', 'seconds': 0.019, 'calls': 5277, 'subproblemsSaved': 5277, 'timedOut': False, 'mistakes': 523, 'trainAccuracy': 0.7266, 'leaves': 13}
+{'dataset': 'bar7', 'depth': 5, 'method': 'recursion', 'seconds': 1.524, 'calls': 1727577, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 507, 'trainAccuracy': 0.735, 'leaves': 25}
+{'dataset': 'bar7', 'depth': 5, 'method': 'memo', 'seconds': 0.058, 'calls': 12538, 'subproblemsSaved': 12538, 'timedOut': False, 'mistakes': 507, 'trainAccuracy': 0.735, 'leaves': 25}
+{'dataset': 'bar7', 'depth': 6, 'method': 'recursion', 'seconds': 17.007, 'calls': 17400249, 'subproblemsSaved': 0, 'timedOut': False, 'mistakes': 501, 'trainAccuracy': 0.7381, 'leaves': 26}
+{'dataset': 'bar7', 'depth': 6, 'method': 'memo', 'seconds': 0.18, 'calls': 23724, 'subproblemsSaved': 23724, 'timedOut': False, 'mistakes': 501, 'trainAccuracy': 0.7381, 'leaves': 26}
+done
+stage dp finished in 425.5 seconds

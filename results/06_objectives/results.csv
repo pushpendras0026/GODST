@@ -1,0 +1,13 @@
+dataset,lam,objective,method,trainObjective,testObjective,leaves,trainAccuracy,testAccuracy,trainAUC,testAUC,seconds,timedOut,gap,paperTrainAUC
+fourclass,0.01,acc,gosdt with weights,0.232609,0.259302,5,0.8174,0.7674,0.7793,0.7312,0.001,False,0.0,0.78
+fourclass,0.01,bacc,gosdt with weights,0.235289,0.306831,5,0.7942,0.7209,0.8147,0.7432,0.001,False,0.0,0.81
+fourclass,0.01,wacc(w=3),gosdt with weights,0.199442,0.260476,7,0.7812,0.6977,0.829,0.7584,0.001,False,0.0,0.82
+fourclass,0.01,f1(w=0.9),leaf set search,0.295675,0.413636,5,0.7942,0.7209,0.8147,0.7432,0.039,False,0.0,0.79
+fourclass,0.01,auc,leaf set search,0.161987,0.209597,8,0.8275,0.7674,0.918,0.8629,0.063,False,0.0,0.92
+fourclass,0.01,pauc(theta=0.2),leaf set search,0.923981,0.936625,4,0.7899,0.7907,0.8432,0.7822,0.014,False,0.0,0.85
+balance,0.01,acc,gosdt with weights,0.088,0.09,1,0.922,0.92,0.5,0.5,0.035,False,0.0,
+balance,0.01,bacc,gosdt with weights,0.327874,0.323913,15,0.672,0.616,0.8221,0.563,3.988,False,0.0,
+balance,0.01,wacc(w=3),gosdt with weights,0.212422,0.216897,1,0.922,0.92,0.5,0.5,1.211,False,0.0,
+balance,0.01,f1(w=0.9),leaf set search,1.01,1.01,1,0.922,0.92,0.5,0.5,21.598,True,0.95,
+balance,0.01,auc,leaf set search,0.356093,0.285217,11,0.922,0.92,0.7539,0.5122,117.806,True,0.296093,
+balance,0.01,pauc(theta=0.2),leaf set search,0.99,0.99,1,0.922,0.92,0.5,0.5,106.621,True,0.13,

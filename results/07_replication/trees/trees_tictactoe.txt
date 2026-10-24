@@ -1,0 +1,140 @@
+Paper: GOSDT 90.9% / 70.8%, DL8.5 86.9% / 61.5%, BinOCT 82.4% / 34.4%
+
+No lambda gives exactly 16 leaves on this fold, so we show the closest GOSDT trees.
+
+==== GOSDT (ours), lambda=0.01: 10 leaves, train 86.0%, test 79.7%
+if middle-middle=x:
+|   predict 1   (299/69)
+else:
+|   if bottom-right=x:
+|   |   if bottom-left=x:
+|   |   |   if bottom-middle=x:
+|   |   |   |   predict 1   (53/0)
+|   |   |   else:
+|   |   |   |   predict 0   (13/22)
+|   |   else:
+|   |   |   if top-right=x:
+|   |   |   |   predict 1   (53/13)
+|   |   |   else:
+|   |   |   |   predict 0   (0/40)
+|   else:
+|   |   if top-left=x:
+|   |   |   if top-right=x:
+|   |   |   |   predict 1   (56/12)
+|   |   |   else:
+|   |   |   |   if bottom-left=x:
+|   |   |   |   |   if middle-left=x:
+|   |   |   |   |   |   predict 1   (34/0)
+|   |   |   |   |   else:
+|   |   |   |   |   |   predict 0   (0/10)
+|   |   |   |   else:
+|   |   |   |   |   predict 0   (0/19)
+|   |   else:
+|   |   |   predict 0   (0/73)
+
+==== GOSDT (ours), lambda=0.009: 20 leaves, train 95.7%, test 90.1%
+if middle-middle=o:
+|   if bottom-left=o:
+|   |   if top-right=x:
+|   |   |   predict 1   (29/9)
+|   |   else:
+|   |   |   predict 0   (0/45)
+|   else:
+|   |   if bottom-right=o:
+|   |   |   if top-left=x:
+|   |   |   |   predict 1   (19/7)
+|   |   |   else:
+|   |   |   |   predict 0   (0/41)
+|   |   else:
+|   |   |   if top-middle=o:
+|   |   |   |   if bottom-middle=o:
+|   |   |   |   |   predict 0   (0/25)
+|   |   |   |   else:
+|   |   |   |   |   predict 1   (27/3)
+|   |   |   else:
+|   |   |   |   if middle-left=o:
+|   |   |   |   |   if middle-right=o:
+|   |   |   |   |   |   predict 0   (0/23)
+|   |   |   |   |   else:
+|   |   |   |   |   |   predict 1   (14/1)
+|   |   |   |   else:
+|   |   |   |   |   predict 1   (25/0)
+else:
+|   if bottom-left=o:
+|   |   if top-left=o:
+|   |   |   if middle-left=o:
+|   |   |   |   predict 0   (0/19)
+|   |   |   else:
+|   |   |   |   predict 1   (27/6)
+|   |   else:
+|   |   |   if bottom-middle=o:
+|   |   |   |   if bottom-right=o:
+|   |   |   |   |   predict 0   (0/25)
+|   |   |   |   else:
+|   |   |   |   |   predict 1   (33/0)
+|   |   |   else:
+|   |   |   |   predict 1   (67/4)
+|   else:
+|   |   if top-right=o:
+|   |   |   if top-middle=o:
+|   |   |   |   if top-left=o:
+|   |   |   |   |   predict 0   (0/25)
+|   |   |   |   else:
+|   |   |   |   |   predict 1   (31/1)
+|   |   |   else:
+|   |   |   |   if bottom-right=o:
+|   |   |   |   |   if middle-right=o:
+|   |   |   |   |   |   predict 0   (0/22)
+|   |   |   |   |   else:
+|   |   |   |   |   |   predict 1   (18/1)
+|   |   |   |   else:
+|   |   |   |   |   predict 1   (43/1)
+|   |   else:
+|   |   |   predict 1   (175/0)
+
+==== DL8.5 style (ours), depth 4: 15 leaves, train 86.9%, test 79.7%
+if bottom-right=x:
+|   if middle-middle=x:
+|   |   if top-left=o:
+|   |   |   if top-right=o:
+|   |   |   |   predict 0   (8/13)
+|   |   |   else:
+|   |   |   |   predict 1   (18/7)
+|   |   else:
+|   |   |   predict 1   (97/0)
+|   else:
+|   |   if bottom-left=x:
+|   |   |   if bottom-middle=x:
+|   |   |   |   predict 1   (53/0)
+|   |   |   else:
+|   |   |   |   predict 0   (13/22)
+|   |   else:
+|   |   |   if top-right=x:
+|   |   |   |   predict 1   (53/13)
+|   |   |   else:
+|   |   |   |   predict 0   (0/40)
+else:
+|   if top-left=x:
+|   |   if top-middle=x:
+|   |   |   if top-right=x:
+|   |   |   |   predict 1   (56/0)
+|   |   |   else:
+|   |   |   |   predict 0   (18/31)
+|   |   else:
+|   |   |   if bottom-left=x:
+|   |   |   |   predict 1   (54/9)
+|   |   |   else:
+|   |   |   |   predict 0   (7/25)
+|   else:
+|   |   if top-left=o:
+|   |   |   if middle-middle=x:
+|   |   |   |   predict 1   (74/16)
+|   |   |   else:
+|   |   |   |   predict 0   (0/51)
+|   |   else:
+|   |   |   if middle-middle=x:
+|   |   |   |   predict 1   (57/9)
+|   |   |   else:
+|   |   |   |   predict 0   (0/22)
+
+==== CART, max 16 leaves: 16 leaves, train 89.6%, test 87.5%

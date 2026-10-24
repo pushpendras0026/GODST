@@ -1,0 +1,4 @@
+if jacket=red:
+|   predict 1
+else:
+|   predict 0

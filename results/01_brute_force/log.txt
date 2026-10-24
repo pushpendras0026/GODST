@@ -1,0 +1,17 @@
+stage: brute
+started: 2026-10-23 17:12:49.039213
+settings: {'quick': False, 'dataset': None, 'lam': None, 'depth': None, 'timelimit': None}
+
+{'dataset': 'monk1', 'features': 11, 'depth': 1, 'totalTrees': 12, 'treesChecked': 12, 'finished': True, 'seconds': 0.0, 'estimatedSecondsForAll': None, 'mistakes': 33, 'trainAccuracy': 0.7339, 'leaves': 2}
+{'dataset': 'monk1', 'features': 11, 'depth': 2, 'totalTrees': 1585, 'treesChecked': 1585, 'finished': True, 'seconds': 0.002, 'estimatedSecondsForAll': None, 'mistakes': 22, 'trainAccuracy': 0.8226, 'leaves': 4}
+{'dataset': 'monk1', 'features': 11, 'depth': 3, 'totalTrees': 27634476, 'treesChecked': 27634476, 'finished': True, 'seconds': 48.753, 'estimatedSecondsForAll': None, 'mistakes': 11, 'trainAccuracy': 0.9113, 'leaves': 5}
+{'dataset': 'monk2', 'features': 11, 'depth': 1, 'totalTrees': 12, 'treesChecked': 12, 'finished': True, 'seconds': 0.0, 'estimatedSecondsForAll': None, 'mistakes': 64, 'trainAccuracy': 0.6213, 'leaves': 1}
+{'dataset': 'monk2', 'features': 11, 'depth': 2, 'totalTrees': 1585, 'treesChecked': 1585, 'finished': True, 'seconds': 0.001, 'estimatedSecondsForAll': None, 'mistakes': 57, 'trainAccuracy': 0.6627, 'leaves': 4}
+{'dataset': 'monk2', 'features': 11, 'depth': 3, 'totalTrees': 27634476, 'treesChecked': 27634476, 'finished': True, 'seconds': 51.702, 'estimatedSecondsForAll': None, 'mistakes': 41, 'trainAccuracy': 0.7574, 'leaves': 7}
+{'dataset': 'monk3', 'features': 11, 'depth': 1, 'totalTrees': 12, 'treesChecked': 12, 'finished': True, 'seconds': 0.0, 'estimatedSecondsForAll': None, 'mistakes': 40, 'trainAccuracy': 0.6721, 'leaves': 2}
+{'dataset': 'monk3', 'features': 11, 'depth': 2, 'totalTrees': 1585, 'treesChecked': 1585, 'finished': True, 'seconds': 0.001, 'estimatedSecondsForAll': None, 'mistakes': 27, 'trainAccuracy': 0.7787, 'leaves': 3}
+{'dataset': 'monk3', 'features': 11, 'depth': 3, 'totalTrees': 27634476, 'treesChecked': 27634476, 'finished': True, 'seconds': 45.238, 'estimatedSecondsForAll': None, 'mistakes': 17, 'trainAccuracy': 0.8607, 'leaves': 7}
+{'dataset': 'tictactoe', 'features': 18, 'depth': 1, 'totalTrees': 19, 'treesChecked': 19, 'finished': True, 'seconds': 0.002, 'estimatedSecondsForAll': None, 'mistakes': 288, 'trainAccuracy': 0.6994, 'leaves': 2}
+{'dataset': 'tictactoe', 'features': 18, 'depth': 2, 'totalTrees': 6499, 'treesChecked': 6499, 'finished': True, 'seconds': 0.009, 'estimatedSecondsForAll': None, 'mistakes': 282, 'trainAccuracy': 0.7056, 'leaves': 3}
+{'dataset': 'tictactoe', 'features': 18, 'depth': 3, 'totalTrees': 760266019, 'treesChecked': 269805986, 'finished': False, 'seconds': 600.007, 'estimatedSecondsForAll': 1690.7, 'mistakes': 216, 'trainAccuracy': 0.7745, 'leaves': 7}
+done

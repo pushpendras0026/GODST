@@ -1,0 +1,10 @@
+if head=round:
+|   if body=round:
+|   |   predict 1
+|   else:
+|   |   predict 0
+else:
+|   if body=round:
+|   |   predict 0
+|   else:
+|   |   predict 1

@@ -1,0 +1,6 @@
+stage: replicate scale
+started: 2026-10-23 20:33:54.133759
+settings: {'quick': False, 'dataset': None, 'lam': None, 'depth': None, 'timelimit': None, 'exp': 'scale', 'jobs': None, 'memlimit': 10000.0}
+
+---- scalability (Fig 6, 14 to 17), lambda = 1/32 or depth 5
+32 jobs were already done before, running the other 0

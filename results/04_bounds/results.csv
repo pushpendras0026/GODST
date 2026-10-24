@@ -1,0 +1,73 @@
+dataset,lam,method,seconds,subproblems,timedOut,objective,leaves,trainAccuracy
+monk1,0.05,step3 (no bounds),0.034,9420,False,0.33871,5,0.9113
+monk1,0.05,step4 (bounds),0.005,586,False,0.33871,5,0.9113
+monk1,0.02,step3 (no bounds),0.068,9420,False,0.16,8,1.0
+monk1,0.02,step4 (bounds),0.019,3184,False,0.16,8,1.0
+monk1,0.01,step3 (no bounds),0.034,9420,False,0.08,8,1.0
+monk1,0.01,step4 (bounds),0.028,4982,False,0.08,8,1.0
+monk1,0.005,step3 (no bounds),0.038,9420,False,0.04,8,1.0
+monk1,0.005,step4 (bounds),0.058,6397,False,0.04,8,1.0
+monk2,0.05,step3 (no bounds),0.093,12650,False,0.428698,1,0.6213
+monk2,0.05,step4 (bounds),0.003,328,False,0.428698,1,0.6213
+monk2,0.02,step3 (no bounds),0.042,12650,False,0.358935,7,0.7811
+monk2,0.02,step4 (bounds),0.021,2972,False,0.358935,7,0.7811
+monk2,0.01,step3 (no bounds),0.049,12650,False,0.265089,20,0.9349
+monk2,0.01,step4 (bounds),0.062,7325,False,0.265089,20,0.9349
+monk2,0.005,step3 (no bounds),0.059,12650,False,0.152751,27,0.9822
+monk2,0.005,step4 (bounds),0.082,10829,False,0.152751,27,0.9822
+monk3,0.05,step3 (no bounds),0.042,9848,False,0.371311,3,0.7787
+monk3,0.05,step4 (bounds),0.004,535,False,0.371311,3,0.7787
+monk3,0.02,step3 (no bounds),0.053,9848,False,0.242951,6,0.877
+monk3,0.02,step4 (bounds),0.018,3357,False,0.242951,6,0.877
+monk3,0.01,step3 (no bounds),0.043,9848,False,0.155574,9,0.9344
+monk3,0.01,step4 (bounds),0.051,5955,False,0.155574,9,0.9344
+monk3,0.005,step3 (no bounds),0.041,9848,False,0.09459,14,0.9754
+monk3,0.005,step4 (bounds),0.052,7823,False,0.09459,14,0.9754
+balance,0.05,step3 (no bounds),1.21,160000,False,0.1284,1,0.9216
+balance,0.05,step4 (bounds),0.0,1,False,0.1284,1,0.9216
+balance,0.02,step3 (no bounds),1.094,160000,False,0.0984,1,0.9216
+balance,0.02,step4 (bounds),0.005,269,False,0.0984,1,0.9216
+balance,0.01,step3 (no bounds),1.233,160000,False,0.0884,1,0.9216
+balance,0.01,step4 (bounds),0.117,8155,False,0.0884,1,0.9216
+balance,0.005,step3 (no bounds),1.058,160000,False,0.0834,1,0.9216
+balance,0.005,step4 (bounds),0.579,37899,False,0.0834,1,0.9216
+car,0.05,step3 (no bounds),2.472,287496,False,0.294676,3,0.8553
+car,0.05,step4 (bounds),0.025,1079,False,0.294676,3,0.8553
+car,0.02,step3 (no bounds),2.408,287496,False,0.204676,3,0.8553
+car,0.02,step4 (bounds),0.211,12876,False,0.204676,3,0.8553
+car,0.01,step3 (no bounds),2.459,287496,False,0.145231,7,0.9248
+car,0.01,step4 (bounds),0.515,40491,False,0.145231,7,0.9248
+car,0.005,step3 (no bounds),2.577,287496,False,0.106343,9,0.9387
+car,0.005,step4 (bounds),1.169,86315,False,0.106343,9,0.9387
+compas_binary,0.05,step3 (no bounds),0.088,5996,False,0.461083,2,0.6389
+compas_binary,0.05,step4 (bounds),0.0,3,False,0.461083,2,0.6389
+compas_binary,0.02,step3 (no bounds),0.086,5996,False,0.401083,2,0.6389
+compas_binary,0.02,step4 (bounds),0.006,287,False,0.401083,2,0.6389
+compas_binary,0.01,step3 (no bounds),0.095,5996,False,0.374868,3,0.6551
+compas_binary,0.01,step4 (bounds),0.02,840,False,0.374868,3,0.6551
+compas_binary,0.005,step3 (no bounds),0.084,5996,False,0.355969,5,0.669
+compas_binary,0.005,step4 (bounds),0.029,1366,False,0.355969,5,0.669
+bar7,0.05,step3 (no bounds),0.282,33573,False,0.453894,2,0.6461
+bar7,0.05,step4 (bounds),0.014,792,False,0.453894,2,0.6461
+bar7,0.02,step3 (no bounds),0.322,33573,False,0.371553,3,0.6884
+bar7,0.02,step4 (bounds),0.139,10687,False,0.371553,3,0.6884
+bar7,0.01,step3 (no bounds),0.312,33573,False,0.341098,4,0.6989
+bar7,0.01,step4 (bounds),0.243,18250,False,0.341098,4,0.6989
+bar7,0.005,step3 (no bounds),0.268,33573,False,0.31862,8,0.7214
+bar7,0.005,step4 (bounds),0.276,23554,False,0.31862,8,0.7214
+tictactoe,0.05,step3 (no bounds),15.343,1321641,False,0.396555,1,0.6534
+tictactoe,0.05,step4 (bounds),0.017,762,False,0.396555,1,0.6534
+tictactoe,0.02,step3 (no bounds),15.368,1321641,False,0.31833,6,0.8017
+tictactoe,0.02,step4 (bounds),0.355,18538,False,0.31833,6,0.8017
+tictactoe,0.01,step3 (no bounds),17.691,1321641,False,0.250752,9,0.8392
+tictactoe,0.01,step4 (bounds),2.078,109688,False,0.250752,9,0.8392
+tictactoe,0.005,step3 (no bounds),15.643,1321641,False,0.15428,20,0.9457
+tictactoe,0.005,step4 (bounds),5.967,374386,False,0.15428,20,0.9457
+fico_binary,0.05,step3 (no bounds),47.215,1474236,False,0.404044,2,0.696
+fico_binary,0.05,step4 (bounds),0.014,297,False,0.404044,2,0.696
+fico_binary,0.02,step3 (no bounds),44.742,1474236,False,0.344044,2,0.696
+fico_binary,0.02,step4 (bounds),0.34,6685,False,0.344044,2,0.696
+fico_binary,0.01,step3 (no bounds),46.368,1474236,False,0.324044,2,0.696
+fico_binary,0.01,step4 (bounds),1.732,32704,False,0.324044,2,0.696
+fico_binary,0.005,step3 (no bounds),47.386,1474236,False,0.308651,4,0.7113
+fico_binary,0.005,step4 (bounds),5.583,103792,False,0.308651,4,0.7113

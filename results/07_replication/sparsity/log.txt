@@ -1,0 +1,7 @@
+stage: replicate sparsity
+started: 2026-10-23 20:33:58.050210
+settings: {'quick': False, 'dataset': None, 'lam': None, 'depth': None, 'timelimit': None, 'exp': 'sparsity', 'jobs': None, 'memlimit': 10000.0}
+
+---- accuracy vs sparsity (Fig 4, 5, 12, 13)
+120 jobs were already done before, running the other 0
+runs that timed out (not used in the plots, like the paper): 25

@@ -1,0 +1,14 @@
+writing results to /home/p_2626/ML_LAB_SEM5/ML_lab/results/07_replication
+writing results to /home/p_2626/ML_LAB_SEM5/ML_lab/results/07_replication/scale
+---- scalability (Fig 6, 14 to 17), lambda = 1/32 or depth 5
+24 jobs were already done before, running the other 8
+finished job 25/32
+finished job 26/32
+finished job 27/32
+finished job 28/32
+finished job 29/32
+finished job 30/32
+finished job 31/32
+finished job 32/32
+scale finished in 1293.2 seconds
+stage replicate finished in 1294.5 seconds

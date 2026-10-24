@@ -1,0 +1,4 @@
+writing results to /home/p_2626/ML_LAB_SEM5/ML_lab/results/00_checks
+tests run: 529   failed: 0
+ALL CHECKS PASSED, every step gives the same optimal objective
+stage check finished in 1.9 seconds

@@ -1,0 +1,33 @@
+==== Pima fold 0, medical cut points: 3 leaves, test accuracy 0.7922077922077922
+if plas<=139.5:
+|   predict 0   (111/342)
+else:
+|   if mass<=29.95:
+|   |   predict 0   (15/21)
+|   else:
+|   |   predict 1   (95/30)
+
+==== Pima fold 0, GBDT guess: 8 leaves, test accuracy 0.7792207792207793
+if plas<=166.5:
+|   if mass<=26.35:
+|   |   predict 0   (6/120)
+|   else:
+|   |   if insu<=197:
+|   |   |   if plas<=127.5:
+|   |   |   |   if pedi<=1.105:
+|   |   |   |   |   predict 0   (61/193)
+|   |   |   |   else:
+|   |   |   |   |   predict 1   (8/2)
+|   |   |   else:
+|   |   |   |   if mass<=29.95:
+|   |   |   |   |   predict 0   (6/18)
+|   |   |   |   else:
+|   |   |   |   |   predict 1   (67/26)
+|   |   else:
+|   |   |   if age<=28.5:
+|   |   |   |   predict 0   (2/19)
+|   |   |   else:
+|   |   |   |   predict 1   (18/8)
+else:
+|   predict 1   (53/7)
+

@@ -1,0 +1,13 @@
+stage: replicate bucket
+started: 2026-10-23 18:39:19.103633
+settings: {'quick': False, 'dataset': None, 'lam': None, 'depth': None, 'timelimit': None, 'exp': 'bucket', 'jobs': None}
+
+---- bucketization, chudi data (Thm 3.1, Fig 1)
+{'thresholds': 'all', 'binaryFeatures': 46, 'maxDepth': 1, 'correct': 56, 'samples': 77, 'bestTrainAccuracy': 0.7273, 'leaves': 2}
+{'thresholds': 'all', 'binaryFeatures': 46, 'maxDepth': 2, 'correct': 72, 'samples': 77, 'bestTrainAccuracy': 0.9351, 'leaves': 4}
+{'thresholds': 'all', 'binaryFeatures': 46, 'maxDepth': 3, 'correct': 77, 'samples': 77, 'bestTrainAccuracy': 1.0, 'leaves': 5}
+{'thresholds': 'all', 'binaryFeatures': 46, 'maxDepth': 4, 'correct': 77, 'samples': 77, 'bestTrainAccuracy': 1.0, 'leaves': 5}
+{'thresholds': 'bucket', 'binaryFeatures': 9, 'maxDepth': 1, 'correct': 56, 'samples': 77, 'bestTrainAccuracy': 0.7273, 'leaves': 2}
+{'thresholds': 'bucket', 'binaryFeatures': 9, 'maxDepth': 2, 'correct': 71, 'samples': 77, 'bestTrainAccuracy': 0.9221, 'leaves': 4}
+{'thresholds': 'bucket', 'binaryFeatures': 9, 'maxDepth': 3, 'correct': 77, 'samples': 77, 'bestTrainAccuracy': 1.0, 'leaves': 5}
+{'thresholds': 'bucket', 'binaryFeatures': 9, 'maxDepth': 4, 'correct': 77, 'samples': 77, 'bestTrainAccuracy': 1.0, 'leaves': 5}

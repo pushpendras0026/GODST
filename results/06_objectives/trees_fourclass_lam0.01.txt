@@ -1,0 +1,102 @@
+==== acc  (leaves show positives/negatives of training rows)
+if f1<=99.5:
+|   predict 0   (47/306)
+else:
+|   if f1<=149.5:
+|   |   if f2<=99.5:
+|   |   |   predict 1   (57/38)
+|   |   else:
+|   |   |   predict 0   (40/64)
+|   else:
+|   |   if f2<=149.5:
+|   |   |   predict 1   (102/1)
+|   |   else:
+|   |   |   predict 0   (0/35)
+
+==== bacc  (leaves show positives/negatives of training rows)
+if f1<=49.5:
+|   predict 0   (0/148)
+else:
+|   if f2<=149.5:
+|   |   if f1<=99.5:
+|   |   |   predict 0   (28/147)
+|   |   else:
+|   |   |   predict 1   (176/79)
+|   else:
+|   |   if f1<=149.5:
+|   |   |   predict 1   (42/35)
+|   |   else:
+|   |   |   predict 0   (0/35)
+
+==== wacc(w=3)  (leaves show positives/negatives of training rows)
+if f1<=49.5:
+|   predict 0   (0/148)
+else:
+|   if f2<=149.5:
+|   |   if f1<=99.5:
+|   |   |   if f2<=99.5:
+|   |   |   |   if f2<=49.5:
+|   |   |   |   |   predict 0   (0/48)
+|   |   |   |   else:
+|   |   |   |   |   predict 1   (27/36)
+|   |   |   else:
+|   |   |   |   predict 0   (1/63)
+|   |   else:
+|   |   |   predict 1   (176/79)
+|   else:
+|   |   if f1<=149.5:
+|   |   |   predict 1   (42/35)
+|   |   else:
+|   |   |   predict 0   (0/35)
+
+==== f1(w=0.9)  (leaves show positives/negatives of training rows)
+if f2<=149.5:
+|   if f1<=99.5:
+|   |   predict 0   (28/242)
+|   else:
+|   |   predict 1   (176/79)
+else:
+|   if f1<=149.5:
+|   |   if f1<=49.5:
+|   |   |   predict 0   (0/53)
+|   |   else:
+|   |   |   predict 1   (42/35)
+|   else:
+|   |   predict 0   (0/35)
+
+==== auc  (leaves show positives/negatives of training rows)
+if f1<=149.5:
+|   if f1<=49.5:
+|   |   predict 0   (0/148)
+|   else:
+|   |   if f2<=149.5:
+|   |   |   if f2<=99.5:
+|   |   |   |   if f1<=99.5:
+|   |   |   |   |   if f2<=49.5:
+|   |   |   |   |   |   predict 0   (0/48)
+|   |   |   |   |   else:
+|   |   |   |   |   |   predict 0   (27/36)
+|   |   |   |   else:
+|   |   |   |   |   predict 1   (57/38)
+|   |   |   else:
+|   |   |   |   predict 0   (18/103)
+|   |   else:
+|   |   |   predict 1   (42/35)
+else:
+|   if f2<=149.5:
+|   |   predict 1   (102/1)
+|   else:
+|   |   predict 0   (0/35)
+
+==== pauc(theta=0.2)  (leaves show positives/negatives of training rows)
+if f1<=149.5:
+|   if f1<=99.5:
+|   |   predict 0   (47/306)
+|   else:
+|   |   predict 0   (97/102)
+else:
+|   if f2<=149.5:
+|   |   predict 1   (102/1)
+|   else:
+|   |   predict 0   (0/35)
+

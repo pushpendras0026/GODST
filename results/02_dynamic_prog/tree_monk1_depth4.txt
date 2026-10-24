@@ -1,0 +1,28 @@
+if head=square:
+|   if body=square:
+|   |   predict 1
+|   else:
+|   |   if jacket=red:
+|   |   |   predict 1
+|   |   else:
+|   |   |   predict 0
+else:
+|   if body=round:
+|   |   if head=round:
+|   |   |   predict 1
+|   |   else:
+|   |   |   if jacket=red:
+|   |   |   |   predict 1
+|   |   |   else:
+|   |   |   |   predict 0
+|   else:
+|   |   if body=square:
+|   |   |   if jacket=red:
+|   |   |   |   predict 1
+|   |   |   else:
+|   |   |   |   predict 0
+|   |   else:
+|   |   |   if head=round:
+|   |   |   |   predict 0
+|   |   |   else:
+|   |   |   |   predict 1

@@ -1,0 +1,168 @@
+stage: newdata
+started: 2026-10-24 01:58:33.744432
+settings: {'quick': False, 'dataset': None, 'lam': None, 'depth': None, 'timelimit': 300.0, 'exp': None, 'jobs': 3, 'memlimit': 10000.0}
+
+421 jobs were already done before, running the other 99
+finished job 422/520
+finished job 423/520
+finished job 424/520
+finished job 425/520
+finished job 426/520
+finished job 427/520
+finished job 428/520
+finished job 429/520
+finished job 430/520
+finished job 431/520
+finished job 432/520
+finished job 433/520
+finished job 434/520
+finished job 435/520
+finished job 436/520
+finished job 437/520
+finished job 438/520
+finished job 439/520
+finished job 440/520
+finished job 441/520
+finished job 442/520
+finished job 443/520
+finished job 444/520
+finished job 445/520
+finished job 446/520
+finished job 447/520
+finished job 448/520
+finished job 449/520
+finished job 450/520
+finished job 451/520
+finished job 452/520
+finished job 453/520
+finished job 454/520
+finished job 455/520
+finished job 456/520
+finished job 457/520
+finished job 458/520
+finished job 459/520
+finished job 460/520
+finished job 461/520
+finished job 462/520
+finished job 463/520
+finished job 464/520
+finished job 465/520
+finished job 466/520
+finished job 467/520
+finished job 468/520
+finished job 469/520
+finished job 470/520
+finished job 471/520
+finished job 472/520
+finished job 473/520
+finished job 474/520
+finished job 475/520
+finished job 476/520
+finished job 477/520
+finished job 478/520
+finished job 479/520
+finished job 480/520
+finished job 481/520
+finished job 482/520
+finished job 483/520
+finished job 484/520
+finished job 485/520
+finished job 486/520
+finished job 487/520
+finished job 488/520
+finished job 489/520
+finished job 490/520
+finished job 491/520
+finished job 492/520
+finished job 493/520
+finished job 494/520
+finished job 495/520
+finished job 496/520
+finished job 497/520
+finished job 498/520
+finished job 499/520
+finished job 500/520
+finished job 501/520
+finished job 502/520
+finished job 503/520
+finished job 504/520
+finished job 505/520
+finished job 506/520
+finished job 507/520
+finished job 508/520
+finished job 509/520
+finished job 510/520
+finished job 511/520
+finished job 512/520
+finished job 513/520
+finished job 514/520
+finished job 515/520
+finished job 516/520
+finished job 517/520
+finished job 518/520
+finished job 519/520
+finished job 520/520
+{'dataset': 'breast_cancer', 'variant': 'GOSDT (paper, all thresholds)', 'lam': 0.01, 'binaryFeatures': 12485.0, 'seconds': 37.553242683410645, 'leaves': 2.0, 'trainAccuracy': 0.9252747252747253, 'testAccuracy': 0.8849557522123894, 'foldsProvedOptimal': 0, 'foldsStopped': 5}
+{'dataset': 'breast_cancer', 'variant': 'GOSDT + threshold guess', 'lam': 0.001, 'binaryFeatures': 39.0, 'seconds': 89.90285325050354, 'leaves': 12.0, 'trainAccuracy': 1.0, 'testAccuracy': 0.956140350877193, 'foldsProvedOptimal': 5, 'foldsStopped': 0}
+{'dataset': 'breast_cancer', 'variant': 'GOSDT + threshold guess', 'lam': 0.005, 'binaryFeatures': 39.0, 'seconds': 21.330602645874023, 'leaves': 6.0, 'trainAccuracy': 0.9824561403508771, 'testAccuracy': 0.9473684210526315, 'foldsProvedOptimal': 5, 'foldsStopped': 0}
+{'dataset': 'breast_cancer', 'variant': 'GOSDT + threshold guess', 'lam': 0.01, 'binaryFeatures': 39.0, 'seconds': 4.208263874053955, 'leaves': 4.0, 'trainAccuracy': 0.9648351648351648, 'testAccuracy': 0.9385964912280702, 'foldsProvedOptimal': 5, 'foldsStopped': 0}
+{'dataset': 'breast_cancer', 'variant': 'GOSDT + all guesses (depth 5)', 'lam': 0.001, 'binaryFeatures': 39.0, 'seconds': 15.896101474761963, 'leaves': 12.0, 'trainAccuracy': 0.9956140350877193, 'testAccuracy': 0.9298245614035088, 'foldsProvedOptimal': 5, 'foldsStopped': 0}
+{'dataset': 'breast_cancer', 'variant': 'GOSDT + all guesses (depth 5)', 'lam': 0.005, 'binaryFeatures': 39.0, 'seconds': 11.562771558761597, 'leaves': 6.0, 'trainAccuracy': 0.9824561403508771, 'testAccuracy': 0.9473684210526315, 'foldsProvedOptimal': 5, 'foldsStopped': 0}
+{'dataset': 'breast_cancer', 'variant': 'GOSDT + all guesses (depth 5)', 'lam': 0.01, 'binaryFeatures': 39.0, 'seconds': 4.314926862716675, 'leaves': 4.0, 'trainAccuracy': 0.9648351648351648, 'testAccuracy': 0.9385964912280702, 'foldsProvedOptimal': 5, 'foldsStopped': 0}
+{'dataset': 'breast_cancer', 'variant': 'GBDT (100 trees)', 'testAccuracy': 0.9649122807017544, 'trainAccuracy': 1.0}
+{'dataset': 'pima', 'variant': 'GOSDT (paper, all thresholds)', 'lam': 0.01, 'binaryFeatures': 1125.0, 'seconds': 34.999754667282104, 'leaves': 2.0, 'trainAccuracy': 0.751219512195122, 'testAccuracy': 0.7337662337662337, 'foldsProvedOptimal': 0, 'foldsStopped': 5}
+{'dataset': 'pima', 'variant': 'GOSDT + threshold guess', 'lam': 0.001, 'binaryFeatures': 57.0, 'seconds': 300.0006730556488, 'leaves': 2.0, 'trainAccuracy': 0.760586319218241, 'testAccuracy': 0.6993464052287581, 'foldsProvedOptimal': 0, 'foldsStopped': 5}
+{'dataset': 'pima', 'variant': 'GOSDT + threshold guess', 'lam': 0.005, 'binaryFeatures': 57.0, 'seconds': 294.7334191799164, 'leaves': 2.0, 'trainAccuracy': 0.754071661237785, 'testAccuracy': 0.7337662337662337, 'foldsProvedOptimal': 0, 'foldsStopped': 5}
+{'dataset': 'pima', 'variant': 'GOSDT + threshold guess', 'lam': 0.01, 'binaryFeatures': 57.0, 'seconds': 200.33276915550232, 'leaves': 2.0, 'trainAccuracy': 0.760586319218241, 'testAccuracy': 0.7337662337662337, 'foldsProvedOptimal': 0, 'foldsStopped': 5}
+{'dataset': 'pima', 'variant': 'GOSDT + all guesses (depth 5)', 'lam': 0.001, 'binaryFeatures': 57.0, 'seconds': 130.40621852874756, 'leaves': 20.0, 'trainAccuracy': 0.8520325203252033, 'testAccuracy': 0.7581699346405228, 'foldsProvedOptimal': 4, 'foldsStopped': 1}
+{'dataset': 'pima', 'variant': 'GOSDT + all guesses (depth 5)', 'lam': 0.005, 'binaryFeatures': 57.0, 'seconds': 93.07563638687134, 'leaves': 8.0, 'trainAccuracy': 0.8127035830618893, 'testAccuracy': 0.7337662337662337, 'foldsProvedOptimal': 4, 'foldsStopped': 1}
+{'dataset': 'pima', 'variant': 'GOSDT + all guesses (depth 5)', 'lam': 0.01, 'binaryFeatures': 57.0, 'seconds': 71.32188582420349, 'leaves': 3.0, 'trainAccuracy': 0.7804878048780488, 'testAccuracy': 0.7662337662337663, 'foldsProvedOptimal': 5, 'foldsStopped': 0}
+{'dataset': 'pima', 'variant': 'GBDT (100 trees)', 'testAccuracy': 0.7662337662337663, 'trainAccuracy': 0.9185667752442996}
+{'dataset': 'banknote', 'variant': 'GOSDT (paper, all thresholds)', 'lam': 0.01, 'binaryFeatures': 4072.0, 'seconds': 33.30363059043884, 'leaves': 2.0, 'trainAccuracy': 0.8515482695810564, 'testAccuracy': 0.8613138686131386, 'foldsProvedOptimal': 0, 'foldsStopped': 5}
+{'dataset': 'banknote', 'variant': 'GOSDT + threshold guess', 'lam': 0.001, 'binaryFeatures': 33.0, 'seconds': 2.0448336601257324, 'leaves': 10.0, 'trainAccuracy': 0.9954462659380692, 'testAccuracy': 0.9854014598540146, 'foldsProvedOptimal': 5, 'foldsStopped': 0}
+{'dataset': 'banknote', 'variant': 'GOSDT + threshold guess', 'lam': 0.005, 'binaryFeatures': 33.0, 'seconds': 1.4348042011260986, 'leaves': 8.0, 'trainAccuracy': 0.9899817850637522, 'testAccuracy': 0.9744525547445255, 'foldsProvedOptimal': 5, 'foldsStopped': 0}
+{'dataset': 'banknote', 'variant': 'GOSDT + threshold guess', 'lam': 0.01, 'binaryFeatures': 33.0, 'seconds': 0.9720945358276367, 'leaves': 5.0, 'trainAccuracy': 0.9690063810391978, 'testAccuracy': 0.9598540145985401, 'foldsProvedOptimal': 5, 'foldsStopped': 0}
+{'dataset': 'banknote', 'variant': 'GOSDT + all guesses (depth 5)', 'lam': 0.001, 'binaryFeatures': 33.0, 'seconds': 0.39023518562316895, 'leaves': 13.0, 'trainAccuracy': 0.9963536918869644, 'testAccuracy': 0.9781021897810219, 'foldsProvedOptimal': 5, 'foldsStopped': 0}
+{'dataset': 'banknote', 'variant': 'GOSDT + all guesses (depth 5)', 'lam': 0.005, 'binaryFeatures': 33.0, 'seconds': 1.499723196029663, 'leaves': 8.0, 'trainAccuracy': 0.98816029143898, 'testAccuracy': 0.9818181818181818, 'foldsProvedOptimal': 5, 'foldsStopped': 0}
+{'dataset': 'banknote', 'variant': 'GOSDT + all guesses (depth 5)', 'lam': 0.01, 'binaryFeatures': 33.0, 'seconds': 1.4169669151306152, 'leaves': 5.0, 'trainAccuracy': 0.9690063810391978, 'testAccuracy': 0.9598540145985401, 'foldsProvedOptimal': 5, 'foldsStopped': 0}
+{'dataset': 'banknote', 'variant': 'GBDT (100 trees)', 'testAccuracy': 0.9927007299270073, 'trainAccuracy': 1.0}
+{'dataset': 'heart', 'variant': 'GOSDT (paper, all thresholds)', 'lam': 0.01, 'binaryFeatures': 342.0, 'seconds': 39.4212851524353, 'leaves': 2.0, 'trainAccuracy': 0.7731481481481481, 'testAccuracy': 0.7222222222222222, 'foldsProvedOptimal': 0, 'foldsStopped': 5}
+{'dataset': 'heart', 'variant': 'GOSDT + threshold guess', 'lam': 0.001, 'binaryFeatures': 40.0, 'seconds': 300.001339673996, 'leaves': 28.0, 'trainAccuracy': 0.9907407407407407, 'testAccuracy': 0.7777777777777778, 'foldsProvedOptimal': 1, 'foldsStopped': 4}
+{'dataset': 'heart', 'variant': 'GOSDT + threshold guess', 'lam': 0.005, 'binaryFeatures': 40.0, 'seconds': 300.0008010864258, 'leaves': 15.0, 'trainAccuracy': 0.9490740740740741, 'testAccuracy': 0.7777777777777778, 'foldsProvedOptimal': 1, 'foldsStopped': 4}
+{'dataset': 'heart', 'variant': 'GOSDT + threshold guess', 'lam': 0.01, 'binaryFeatures': 40.0, 'seconds': 300.00045800209045, 'leaves': 8.0, 'trainAccuracy': 0.8981481481481481, 'testAccuracy': 0.8148148148148148, 'foldsProvedOptimal': 1, 'foldsStopped': 4}
+{'dataset': 'heart', 'variant': 'GOSDT + all guesses (depth 5)', 'lam': 0.001, 'binaryFeatures': 40.0, 'seconds': 18.691245317459106, 'leaves': 27.0, 'trainAccuracy': 0.9629629629629629, 'testAccuracy': 0.7962962962962963, 'foldsProvedOptimal': 5, 'foldsStopped': 0}
+{'dataset': 'heart', 'variant': 'GOSDT + all guesses (depth 5)', 'lam': 0.005, 'binaryFeatures': 40.0, 'seconds': 30.516850471496582, 'leaves': 14.0, 'trainAccuracy': 0.9398148148148148, 'testAccuracy': 0.8333333333333334, 'foldsProvedOptimal': 5, 'foldsStopped': 0}
+{'dataset': 'heart', 'variant': 'GOSDT + all guesses (depth 5)', 'lam': 0.01, 'binaryFeatures': 40.0, 'seconds': 24.735939025878906, 'leaves': 8.0, 'trainAccuracy': 0.8935185185185185, 'testAccuracy': 0.7962962962962963, 'foldsProvedOptimal': 5, 'foldsStopped': 0}
+{'dataset': 'heart', 'variant': 'GBDT (100 trees)', 'testAccuracy': 0.8333333333333334, 'trainAccuracy': 1.0}
+{'dataset': 'german_credit', 'variant': 'GOSDT (paper, all thresholds)', 'lam': 0.01, 'binaryFeatures': 894.0, 'seconds': 34.181798219680786, 'leaves': 3.0, 'trainAccuracy': 0.72625, 'testAccuracy': 0.725, 'foldsProvedOptimal': 0, 'foldsStopped': 5}
+{'dataset': 'german_credit', 'variant': 'GOSDT + threshold guess', 'lam': 0.001, 'binaryFeatures': 53.0, 'seconds': 300.0012421607971, 'leaves': 14.0, 'trainAccuracy': 0.7475, 'testAccuracy': 0.735, 'foldsProvedOptimal': 0, 'foldsStopped': 5}
+{'dataset': 'german_credit', 'variant': 'GOSDT + threshold guess', 'lam': 0.005, 'binaryFeatures': 53.0, 'seconds': 171.25205087661743, 'leaves': 3.0, 'trainAccuracy': 0.73125, 'testAccuracy': 0.725, 'foldsProvedOptimal': 0, 'foldsStopped': 5}
+{'dataset': 'german_credit', 'variant': 'GOSDT + threshold guess', 'lam': 0.01, 'binaryFeatures': 53.0, 'seconds': 131.66739916801453, 'leaves': 3.0, 'trainAccuracy': 0.73125, 'testAccuracy': 0.72, 'foldsProvedOptimal': 0, 'foldsStopped': 5}
+{'dataset': 'german_credit', 'variant': 'GOSDT + all guesses (depth 5)', 'lam': 0.001, 'binaryFeatures': 53.0, 'seconds': 111.86925888061523, 'leaves': 17.0, 'trainAccuracy': 0.78375, 'testAccuracy': 0.705, 'foldsProvedOptimal': 1, 'foldsStopped': 4}
+{'dataset': 'german_credit', 'variant': 'GOSDT + all guesses (depth 5)', 'lam': 0.005, 'binaryFeatures': 53.0, 'seconds': 96.58555603027344, 'leaves': 9.0, 'trainAccuracy': 0.785, 'testAccuracy': 0.725, 'foldsProvedOptimal': 2, 'foldsStopped': 3}
+{'dataset': 'german_credit', 'variant': 'GOSDT + all guesses (depth 5)', 'lam': 0.01, 'binaryFeatures': 53.0, 'seconds': 88.81660580635071, 'leaves': 5.0, 'trainAccuracy': 0.7625, 'testAccuracy': 0.72, 'foldsProvedOptimal': 3, 'foldsStopped': 2}
+{'dataset': 'german_credit', 'variant': 'GBDT (100 trees)', 'testAccuracy': 0.775, 'trainAccuracy': 0.91375}
+{'dataset': 'mushroom', 'variant': 'GOSDT (paper, all thresholds)', 'lam': 0.01, 'binaryFeatures': 112.0, 'seconds': 25.163580656051636, 'leaves': 2.0, 'trainAccuracy': 0.8862901984920757, 'testAccuracy': 0.8886153846153846, 'foldsProvedOptimal': 0, 'foldsStopped': 5}
+{'dataset': 'mushroom', 'variant': 'GOSDT + threshold guess', 'lam': 0.001, 'binaryFeatures': 11.0, 'seconds': 0.008541107177734375, 'leaves': 7.0, 'trainAccuracy': 0.998307431912602, 'testAccuracy': 0.9981538461538462, 'foldsProvedOptimal': 5, 'foldsStopped': 0}
+{'dataset': 'mushroom', 'variant': 'GOSDT + threshold guess', 'lam': 0.005, 'binaryFeatures': 11.0, 'seconds': 0.006220340728759766, 'leaves': 5.0, 'trainAccuracy': 0.9943068164332974, 'testAccuracy': 0.9932307692307693, 'foldsProvedOptimal': 5, 'foldsStopped': 0}
+{'dataset': 'mushroom', 'variant': 'GOSDT + threshold guess', 'lam': 0.01, 'binaryFeatures': 11.0, 'seconds': 0.005329608917236328, 'leaves': 4.0, 'trainAccuracy': 0.985536236344053, 'testAccuracy': 0.984, 'foldsProvedOptimal': 5, 'foldsStopped': 0}
+{'dataset': 'mushroom', 'variant': 'GOSDT + all guesses (depth 5)', 'lam': 0.001, 'binaryFeatures': 11.0, 'seconds': 0.010672569274902344, 'leaves': 7.0, 'trainAccuracy': 0.998307431912602, 'testAccuracy': 0.9981538461538462, 'foldsProvedOptimal': 5, 'foldsStopped': 0}
+{'dataset': 'mushroom', 'variant': 'GOSDT + all guesses (depth 5)', 'lam': 0.005, 'binaryFeatures': 11.0, 'seconds': 0.010284900665283203, 'leaves': 5.0, 'trainAccuracy': 0.9943068164332974, 'testAccuracy': 0.9932307692307693, 'foldsProvedOptimal': 5, 'foldsStopped': 0}
+{'dataset': 'mushroom', 'variant': 'GOSDT + all guesses (depth 5)', 'lam': 0.01, 'binaryFeatures': 11.0, 'seconds': 0.008313655853271484, 'leaves': 4.0, 'trainAccuracy': 0.985536236344053, 'testAccuracy': 0.984, 'foldsProvedOptimal': 5, 'foldsStopped': 0}
+{'dataset': 'mushroom', 'variant': 'GBDT (100 trees)', 'testAccuracy': 1.0, 'trainAccuracy': 1.0}
+{'dataset': 'titanic', 'variant': 'GOSDT (paper, all thresholds)', 'lam': 0.01, 'binaryFeatures': 345.0, 'seconds': 42.71492123603821, 'leaves': 2.0, 'trainAccuracy': 0.7772455089820359, 'testAccuracy': 0.7836538461538461, 'foldsProvedOptimal': 0, 'foldsStopped': 5}
+{'dataset': 'titanic', 'variant': 'GOSDT + threshold guess', 'lam': 0.001, 'binaryFeatures': 26.0, 'seconds': 2.7831923961639404, 'leaves': 26.0, 'trainAccuracy': 0.8573141486810552, 'testAccuracy': 0.7942583732057417, 'foldsProvedOptimal': 5, 'foldsStopped': 0}
+{'dataset': 'titanic', 'variant': 'GOSDT + threshold guess', 'lam': 0.005, 'binaryFeatures': 26.0, 'seconds': 1.4183104038238525, 'leaves': 6.0, 'trainAccuracy': 0.8261390887290168, 'testAccuracy': 0.8086124401913876, 'foldsProvedOptimal': 5, 'foldsStopped': 0}
+{'dataset': 'titanic', 'variant': 'GOSDT + threshold guess', 'lam': 0.01, 'binaryFeatures': 26.0, 'seconds': 0.5718424320220947, 'leaves': 4.0, 'trainAccuracy': 0.8117505995203836, 'testAccuracy': 0.7932692307692307, 'foldsProvedOptimal': 5, 'foldsStopped': 0}
+{'dataset': 'titanic', 'variant': 'GOSDT + all guesses (depth 5)', 'lam': 0.001, 'binaryFeatures': 26.0, 'seconds': 1.0137875080108643, 'leaves': 13.0, 'trainAccuracy': 0.8393285371702638, 'testAccuracy': 0.7942583732057417, 'foldsProvedOptimal': 5, 'foldsStopped': 0}
+{'dataset': 'titanic', 'variant': 'GOSDT + all guesses (depth 5)', 'lam': 0.005, 'binaryFeatures': 26.0, 'seconds': 0.7790684700012207, 'leaves': 6.0, 'trainAccuracy': 0.8261390887290168, 'testAccuracy': 0.8086124401913876, 'foldsProvedOptimal': 5, 'foldsStopped': 0}
+{'dataset': 'titanic', 'variant': 'GOSDT + all guesses (depth 5)', 'lam': 0.01, 'binaryFeatures': 26.0, 'seconds': 0.35442614555358887, 'leaves': 4.0, 'trainAccuracy': 0.8117505995203836, 'testAccuracy': 0.7932692307692307, 'foldsProvedOptimal': 5, 'foldsStopped': 0}
+{'dataset': 'titanic', 'variant': 'GBDT (100 trees)', 'testAccuracy': 0.7932692307692307, 'trainAccuracy': 0.8838323353293414}
+{'dataset': 'spambase', 'variant': 'GOSDT (paper, all thresholds)', 'lam': 0.01, 'binaryFeatures': 13694.0, 'seconds': 37.68220353126526, 'leaves': 2.0, 'trainAccuracy': 0.7946210268948656, 'testAccuracy': 0.7902173913043479, 'foldsProvedOptimal': 0, 'foldsStopped': 5}
+{'dataset': 'spambase', 'variant': 'GOSDT + threshold guess', 'lam': 0.001, 'binaryFeatures': 73.0, 'seconds': 161.81897377967834, 'leaves': 2.0, 'trainAccuracy': 0.7946210268948656, 'testAccuracy': 0.7902173913043479, 'foldsProvedOptimal': 0, 'foldsStopped': 5}
+{'dataset': 'spambase', 'variant': 'GOSDT + threshold guess', 'lam': 0.005, 'binaryFeatures': 73.0, 'seconds': 94.77258634567261, 'leaves': 2.0, 'trainAccuracy': 0.7959793534365661, 'testAccuracy': 0.7902173913043479, 'foldsProvedOptimal': 0, 'foldsStopped': 5}
+{'dataset': 'spambase', 'variant': 'GOSDT + threshold guess', 'lam': 0.01, 'binaryFeatures': 73.0, 'seconds': 81.1056158542633, 'leaves': 3.0, 'trainAccuracy': 0.8226025536538984, 'testAccuracy': 0.8217391304347826, 'foldsProvedOptimal': 0, 'foldsStopped': 5}
+{'dataset': 'spambase', 'variant': 'GOSDT + all guesses (depth 5)', 'lam': 0.001, 'binaryFeatures': 73.0, 'seconds': 92.7654287815094, 'leaves': 6.0, 'trainAccuracy': 0.8133659331703341, 'testAccuracy': 0.816304347826087, 'foldsProvedOptimal': 0, 'foldsStopped': 5}
+{'dataset': 'spambase', 'variant': 'GOSDT + all guesses (depth 5)', 'lam': 0.005, 'binaryFeatures': 73.0, 'seconds': 84.56488156318665, 'leaves': 6.0, 'trainAccuracy': 0.8551630434782609, 'testAccuracy': 0.8456521739130435, 'foldsProvedOptimal': 0, 'foldsStopped': 5}
+{'dataset': 'spambase', 'variant': 'GOSDT + all guesses (depth 5)', 'lam': 0.01, 'binaryFeatures': 73.0, 'seconds': 82.20464396476746, 'leaves': 5.0, 'trainAccuracy': 0.8573369565217391, 'testAccuracy': 0.8458197611292074, 'foldsProvedOptimal': 0, 'foldsStopped': 5}
+{'dataset': 'spambase', 'variant': 'GBDT (100 trees)', 'testAccuracy': 0.9423913043478261, 'trainAccuracy': 0.9663135017658245}

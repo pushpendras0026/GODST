@@ -1,0 +1,113 @@
+stage: bounds
+started: 2026-10-23 17:12:49.039340
+settings: {'quick': False, 'dataset': None, 'lam': None, 'depth': None, 'timelimit': None}
+
+{'dataset': 'monk1', 'lam': 0.05, 'method': 'step3 (no bounds)', 'seconds': 0.034, 'subproblems': 9420, 'timedOut': False, 'objective': 0.33871, 'leaves': 5, 'trainAccuracy': 0.9113}
+{'dataset': 'monk1', 'lam': 0.05, 'method': 'step4 (bounds)', 'seconds': 0.005, 'subproblems': 586, 'timedOut': False, 'objective': 0.33871, 'leaves': 5, 'trainAccuracy': 0.9113}
+  same objective: True
+{'dataset': 'monk1', 'lam': 0.02, 'method': 'step3 (no bounds)', 'seconds': 0.068, 'subproblems': 9420, 'timedOut': False, 'objective': 0.16, 'leaves': 8, 'trainAccuracy': 1.0}
+{'dataset': 'monk1', 'lam': 0.02, 'method': 'step4 (bounds)', 'seconds': 0.019, 'subproblems': 3184, 'timedOut': False, 'objective': 0.16, 'leaves': 8, 'trainAccuracy': 1.0}
+  same objective: True
+{'dataset': 'monk1', 'lam': 0.01, 'method': 'step3 (no bounds)', 'seconds': 0.034, 'subproblems': 9420, 'timedOut': False, 'objective': 0.08, 'leaves': 8, 'trainAccuracy': 1.0}
+{'dataset': 'monk1', 'lam': 0.01, 'method': 'step4 (bounds)', 'seconds': 0.028, 'subproblems': 4982, 'timedOut': False, 'objective': 0.08, 'leaves': 8, 'trainAccuracy': 1.0}
+  same objective: True
+{'dataset': 'monk1', 'lam': 0.005, 'method': 'step3 (no bounds)', 'seconds': 0.038, 'subproblems': 9420, 'timedOut': False, 'objective': 0.04, 'leaves': 8, 'trainAccuracy': 1.0}
+{'dataset': 'monk1', 'lam': 0.005, 'method': 'step4 (bounds)', 'seconds': 0.058, 'subproblems': 6397, 'timedOut': False, 'objective': 0.04, 'leaves': 8, 'trainAccuracy': 1.0}
+  same objective: True
+{'dataset': 'monk2', 'lam': 0.05, 'method': 'step3 (no bounds)', 'seconds': 0.093, 'subproblems': 12650, 'timedOut': False, 'objective': 0.428698, 'leaves': 1, 'trainAccuracy': 0.6213}
+{'dataset': 'monk2', 'lam': 0.05, 'method': 'step4 (bounds)', 'seconds': 0.003, 'subproblems': 328, 'timedOut': False, 'objective': 0.428698, 'leaves': 1, 'trainAccuracy': 0.6213}
+  same objective: True
+{'dataset': 'monk2', 'lam': 0.02, 'method': 'step3 (no bounds)', 'seconds': 0.042, 'subproblems': 12650, 'timedOut': False, 'objective': 0.358935, 'leaves': 7, 'trainAccuracy': 0.7811}
+{'dataset': 'monk2', 'lam': 0.02, 'method': 'step4 (bounds)', 'seconds': 0.021, 'subproblems': 2972, 'timedOut': False, 'objective': 0.358935, 'leaves': 7, 'trainAccuracy': 0.7811}
+  same objective: True
+{'dataset': 'monk2', 'lam': 0.01, 'method': 'step3 (no bounds)', 'seconds': 0.049, 'subproblems': 12650, 'timedOut': False, 'objective': 0.265089, 'leaves': 20, 'trainAccuracy': 0.9349}
+{'dataset': 'monk2', 'lam': 0.01, 'method': 'step4 (bounds)', 'seconds': 0.062, 'subproblems': 7325, 'timedOut': False, 'objective': 0.265089, 'leaves': 20, 'trainAccuracy': 0.9349}
+  same objective: True
+{'dataset': 'monk2', 'lam': 0.005, 'method': 'step3 (no bounds)', 'seconds': 0.059, 'subproblems': 12650, 'timedOut': False, 'objective': 0.152751, 'leaves': 27, 'trainAccuracy': 0.9822}
+{'dataset': 'monk2', 'lam': 0.005, 'method': 'step4 (bounds)', 'seconds': 0.082, 'subproblems': 10829, 'timedOut': False, 'objective': 0.152751, 'leaves': 27, 'trainAccuracy': 0.9822}
+  same objective: True
+{'dataset': 'monk3', 'lam': 0.05, 'method': 'step3 (no bounds)', 'seconds': 0.042, 'subproblems': 9848, 'timedOut': False, 'objective': 0.371311, 'leaves': 3, 'trainAccuracy': 0.7787}
+{'dataset': 'monk3', 'lam': 0.05, 'method': 'step4 (bounds)', 'seconds': 0.004, 'subproblems': 535, 'timedOut': False, 'objective': 0.371311, 'leaves': 3, 'trainAccuracy': 0.7787}
+  same objective: True
+{'dataset': 'monk3', 'lam': 0.02, 'method': 'step3 (no bounds)', 'seconds': 0.053, 'subproblems': 9848, 'timedOut': False, 'objective': 0.242951, 'leaves': 6, 'trainAccuracy': 0.877}
+{'dataset': 'monk3', 'lam': 0.02, 'method': 'step4 (bounds)', 'seconds': 0.018, 'subproblems': 3357, 'timedOut': False, 'objective': 0.242951, 'leaves': 6, 'trainAccuracy': 0.877}
+  same objective: True
+{'dataset': 'monk3', 'lam': 0.01, 'method': 'step3 (no bounds)', 'seconds': 0.043, 'subproblems': 9848, 'timedOut': False, 'objective': 0.155574, 'leaves': 9, 'trainAccuracy': 0.9344}
+{'dataset': 'monk3', 'lam': 0.01, 'method': 'step4 (bounds)', 'seconds': 0.051, 'subproblems': 5955, 'timedOut': False, 'objective': 0.155574, 'leaves': 9, 'trainAccuracy': 0.9344}
+  same objective: True
+{'dataset': 'monk3', 'lam': 0.005, 'method': 'step3 (no bounds)', 'seconds': 0.041, 'subproblems': 9848, 'timedOut': False, 'objective': 0.09459, 'leaves': 14, 'trainAccuracy': 0.9754}
+{'dataset': 'monk3', 'lam': 0.005, 'method': 'step4 (bounds)', 'seconds': 0.052, 'subproblems': 7823, 'timedOut': False, 'objective': 0.09459, 'leaves': 14, 'trainAccuracy': 0.9754}
+  same objective: True
+{'dataset': 'balance', 'lam': 0.05, 'method': 'step3 (no bounds)', 'seconds': 1.21, 'subproblems': 160000, 'timedOut': False, 'objective': 0.1284, 'leaves': 1, 'trainAccuracy': 0.9216}
+{'dataset': 'balance', 'lam': 0.05, 'method': 'step4 (bounds)', 'seconds': 0.0, 'subproblems': 1, 'timedOut': False, 'objective': 0.1284, 'leaves': 1, 'trainAccuracy': 0.9216}
+  same objective: True
+{'dataset': 'balance', 'lam': 0.02, 'method': 'step3 (no bounds)', 'seconds': 1.094, 'subproblems': 160000, 'timedOut': False, 'objective': 0.0984, 'leaves': 1, 'trainAccuracy': 0.9216}
+{'dataset': 'balance', 'lam': 0.02, 'method': 'step4 (bounds)', 'seconds': 0.005, 'subproblems': 269, 'timedOut': False, 'objective': 0.0984, 'leaves': 1, 'trainAccuracy': 0.9216}
+  same objective: True
+{'dataset': 'balance', 'lam': 0.01, 'method': 'step3 (no bounds)', 'seconds': 1.233, 'subproblems': 160000, 'timedOut': False, 'objective': 0.0884, 'leaves': 1, 'trainAccuracy': 0.9216}
+{'dataset': 'balance', 'lam': 0.01, 'method': 'step4 (bounds)', 'seconds': 0.117, 'subproblems': 8155, 'timedOut': False, 'objective': 0.0884, 'leaves': 1, 'trainAccuracy': 0.9216}
+  same objective: True
+{'dataset': 'balance', 'lam': 0.005, 'method': 'step3 (no bounds)', 'seconds': 1.058, 'subproblems': 160000, 'timedOut': False, 'objective': 0.0834, 'leaves': 1, 'trainAccuracy': 0.9216}
+{'dataset': 'balance', 'lam': 0.005, 'method': 'step4 (bounds)', 'seconds': 0.579, 'subproblems': 37899, 'timedOut': False, 'objective': 0.0834, 'leaves': 1, 'trainAccuracy': 0.9216}
+  same objective: True
+{'dataset': 'car', 'lam': 0.05, 'method': 'step3 (no bounds)', 'seconds': 2.472, 'subproblems': 287496, 'timedOut': False, 'objective': 0.294676, 'leaves': 3, 'trainAccuracy': 0.8553}
+{'dataset': 'car', 'lam': 0.05, 'method': 'step4 (bounds)', 'seconds': 0.025, 'subproblems': 1079, 'timedOut': False, 'objective': 0.294676, 'leaves': 3, 'trainAccuracy': 0.8553}
+  same objective: True
+{'dataset': 'car', 'lam': 0.02, 'method': 'step3 (no bounds)', 'seconds': 2.408, 'subproblems': 287496, 'timedOut': False, 'objective': 0.204676, 'leaves': 3, 'trainAccuracy': 0.8553}
+{'dataset': 'car', 'lam': 0.02, 'method': 'step4 (bounds)', 'seconds': 0.211, 'subproblems': 12876, 'timedOut': False, 'objective': 0.204676, 'leaves': 3, 'trainAccuracy': 0.8553}
+  same objective: True
+{'dataset': 'car', 'lam': 0.01, 'method': 'step3 (no bounds)', 'seconds': 2.459, 'subproblems': 287496, 'timedOut': False, 'objective': 0.145231, 'leaves': 7, 'trainAccuracy': 0.9248}
+{'dataset': 'car', 'lam': 0.01, 'method': 'step4 (bounds)', 'seconds': 0.515, 'subproblems': 40491, 'timedOut': False, 'objective': 0.145231, 'leaves': 7, 'trainAccuracy': 0.9248}
+  same objective: True
+{'dataset': 'car', 'lam': 0.005, 'method': 'step3 (no bounds)', 'seconds': 2.577, 'subproblems': 287496, 'timedOut': False, 'objective': 0.106343, 'leaves': 9, 'trainAccuracy': 0.9387}
+{'dataset': 'car', 'lam': 0.005, 'method': 'step4 (bounds)', 'seconds': 1.169, 'subproblems': 86315, 'timedOut': False, 'objective': 0.106343, 'leaves': 9, 'trainAccuracy': 0.9387}
+  same objective: True
+{'dataset': 'compas_binary', 'lam': 0.05, 'method': 'step3 (no bounds)', 'seconds': 0.088, 'subproblems': 5996, 'timedOut': False, 'objective': 0.461083, 'leaves': 2, 'trainAccuracy': 0.6389}
+{'dataset': 'compas_binary', 'lam': 0.05, 'method': 'step4 (bounds)', 'seconds': 0.0, 'subproblems': 3, 'timedOut': False, 'objective': 0.461083, 'leaves': 2, 'trainAccuracy': 0.6389}
+  same objective: True
+{'dataset': 'compas_binary', 'lam': 0.02, 'method': 'step3 (no bounds)', 'seconds': 0.086, 'subproblems': 5996, 'timedOut': False, 'objective': 0.401083, 'leaves': 2, 'trainAccuracy': 0.6389}
+{'dataset': 'compas_binary', 'lam': 0.02, 'method': 'step4 (bounds)', 'seconds': 0.006, 'subproblems': 287, 'timedOut': False, 'objective': 0.401083, 'leaves': 2, 'trainAccuracy': 0.6389}
+  same objective: True
+{'dataset': 'compas_binary', 'lam': 0.01, 'method': 'step3 (no bounds)', 'seconds': 0.095, 'subproblems': 5996, 'timedOut': False, 'objective': 0.374868, 'leaves': 3, 'trainAccuracy': 0.6551}
+{'dataset': 'compas_binary', 'lam': 0.01, 'method': 'step4 (bounds)', 'seconds': 0.02, 'subproblems': 840, 'timedOut': False, 'objective': 0.374868, 'leaves': 3, 'trainAccuracy': 0.6551}
+  same objective: True
+{'dataset': 'compas_binary', 'lam': 0.005, 'method': 'step3 (no bounds)', 'seconds': 0.084, 'subproblems': 5996, 'timedOut': False, 'objective': 0.355969, 'leaves': 5, 'trainAccuracy': 0.669}
+{'dataset': 'compas_binary', 'lam': 0.005, 'method': 'step4 (bounds)', 'seconds': 0.029, 'subproblems': 1366, 'timedOut': False, 'objective': 0.355969, 'leaves': 5, 'trainAccuracy': 0.669}
+  same objective: True
+{'dataset': 'bar7', 'lam': 0.05, 'method': 'step3 (no bounds)', 'seconds': 0.282, 'subproblems': 33573, 'timedOut': False, 'objective': 0.453894, 'leaves': 2, 'trainAccuracy': 0.6461}
+{'dataset': 'bar7', 'lam': 0.05, 'method': 'step4 (bounds)', 'seconds': 0.014, 'subproblems': 792, 'timedOut': False, 'objective': 0.453894, 'leaves': 2, 'trainAccuracy': 0.6461}
+  same objective: True
+{'dataset': 'bar7', 'lam': 0.02, 'method': 'step3 (no bounds)', 'seconds': 0.322, 'subproblems': 33573, 'timedOut': False, 'objective': 0.371553, 'leaves': 3, 'trainAccuracy': 0.6884}
+{'dataset': 'bar7', 'lam': 0.02, 'method': 'step4 (bounds)', 'seconds': 0.139, 'subproblems': 10687, 'timedOut': False, 'objective': 0.371553, 'leaves': 3, 'trainAccuracy': 0.6884}
+  same objective: True
+{'dataset': 'bar7', 'lam': 0.01, 'method': 'step3 (no bounds)', 'seconds': 0.312, 'subproblems': 33573, 'timedOut': False, 'objective': 0.341098, 'leaves': 4, 'trainAccuracy': 0.6989}
+{'dataset': 'bar7', 'lam': 0.01, 'method': 'step4 (bounds)', 'seconds': 0.243, 'subproblems': 18250, 'timedOut': False, 'objective': 0.341098, 'leaves': 4, 'trainAccuracy': 0.6989}
+  same objective: True
+{'dataset': 'bar7', 'lam': 0.005, 'method': 'step3 (no bounds)', 'seconds': 0.268, 'subproblems': 33573, 'timedOut': False, 'objective': 0.31862, 'leaves': 8, 'trainAccuracy': 0.7214}
+{'dataset': 'bar7', 'lam': 0.005, 'method': 'step4 (bounds)', 'seconds': 0.276, 'subproblems': 23554, 'timedOut': False, 'objective': 0.31862, 'leaves': 8, 'trainAccuracy': 0.7214}
+  same objective: True
+{'dataset': 'tictactoe', 'lam': 0.05, 'method': 'step3 (no bounds)', 'seconds': 15.343, 'subproblems': 1321641, 'timedOut': False, 'objective': 0.396555, 'leaves': 1, 'trainAccuracy': 0.6534}
+{'dataset': 'tictactoe', 'lam': 0.05, 'method': 'step4 (bounds)', 'seconds': 0.017, 'subproblems': 762, 'timedOut': False, 'objective': 0.396555, 'leaves': 1, 'trainAccuracy': 0.6534}
+  same objective: True
+{'dataset': 'tictactoe', 'lam': 0.02, 'method': 'step3 (no bounds)', 'seconds': 15.368, 'subproblems': 1321641, 'timedOut': False, 'objective': 0.31833, 'leaves': 6, 'trainAccuracy': 0.8017}
+{'dataset': 'tictactoe', 'lam': 0.02, 'method': 'step4 (bounds)', 'seconds': 0.355, 'subproblems': 18538, 'timedOut': False, 'objective': 0.31833, 'leaves': 6, 'trainAccuracy': 0.8017}
+  same objective: True
+{'dataset': 'tictactoe', 'lam': 0.01, 'method': 'step3 (no bounds)', 'seconds': 17.691, 'subproblems': 1321641, 'timedOut': False, 'objective': 0.250752, 'leaves': 9, 'trainAccuracy': 0.8392}
+{'dataset': 'tictactoe', 'lam': 0.01, 'method': 'step4 (bounds)', 'seconds': 2.078, 'subproblems': 109688, 'timedOut': False, 'objective': 0.250752, 'leaves': 9, 'trainAccuracy': 0.8392}
+  same objective: True
+{'dataset': 'tictactoe', 'lam': 0.005, 'method': 'step3 (no bounds)', 'seconds': 15.643, 'subproblems': 1321641, 'timedOut': False, 'objective': 0.15428, 'leaves': 20, 'trainAccuracy': 0.9457}
+{'dataset': 'tictactoe', 'lam': 0.005, 'method': 'step4 (bounds)', 'seconds': 5.967, 'subproblems': 374386, 'timedOut': False, 'objective': 0.15428, 'leaves': 20, 'trainAccuracy': 0.9457}
+  same objective: True
+{'dataset': 'fico_binary', 'lam': 0.05, 'method': 'step3 (no bounds)', 'seconds': 47.215, 'subproblems': 1474236, 'timedOut': False, 'objective': 0.404044, 'leaves': 2, 'trainAccuracy': 0.696}
+{'dataset': 'fico_binary', 'lam': 0.05, 'method': 'step4 (bounds)', 'seconds': 0.014, 'subproblems': 297, 'timedOut': False, 'objective': 0.404044, 'leaves': 2, 'trainAccuracy': 0.696}
+  same objective: True
+{'dataset': 'fico_binary', 'lam': 0.02, 'method': 'step3 (no bounds)', 'seconds': 44.742, 'subproblems': 1474236, 'timedOut': False, 'objective': 0.344044, 'leaves': 2, 'trainAccuracy': 0.696}
+{'dataset': 'fico_binary', 'lam': 0.02, 'method': 'step4 (bounds)', 'seconds': 0.34, 'subproblems': 6685, 'timedOut': False, 'objective': 0.344044, 'leaves': 2, 'trainAccuracy': 0.696}
+  same objective: True
+{'dataset': 'fico_binary', 'lam': 0.01, 'method': 'step3 (no bounds)', 'seconds': 46.368, 'subproblems': 1474236, 'timedOut': False, 'objective': 0.324044, 'leaves': 2, 'trainAccuracy': 0.696}
+{'dataset': 'fico_binary', 'lam': 0.01, 'method': 'step4 (bounds)', 'seconds': 1.732, 'subproblems': 32704, 'timedOut': False, 'objective': 0.324044, 'leaves': 2, 'trainAccuracy': 0.696}
+  same objective: True
+{'dataset': 'fico_binary', 'lam': 0.005, 'method': 'step3 (no bounds)', 'seconds': 47.386, 'subproblems': 1474236, 'timedOut': False, 'objective': 0.308651, 'leaves': 4, 'trainAccuracy': 0.7113}
+{'dataset': 'fico_binary', 'lam': 0.005, 'method': 'step4 (bounds)', 'seconds': 5.583, 'subproblems': 103792, 'timedOut': False, 'objective': 0.308651, 'leaves': 4, 'trainAccuracy': 0.7113}
+  same objective: True
+done

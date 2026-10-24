@@ -1,0 +1,5 @@
+stage: replicate time
+started: 2026-10-23 20:34:00.819449
+settings: {'quick': False, 'dataset': None, 'lam': None, 'depth': None, 'timelimit': None, 'exp': 'time', 'jobs': None, 'memlimit': 10000.0}
+
+time finished in 0.7 seconds

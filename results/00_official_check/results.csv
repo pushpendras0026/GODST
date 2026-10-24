@@ -1,0 +1,45 @@
+dataset,lam,ourObjective,ourLeaves,ourSeconds,ourTimedOut,officialObjective,officialLeaves,officialUpperBound,officialLowerBound,officialSeconds,officialTimedOut,status
+monk1,0.05,0.33871,5,0.006,False,0.33871,5,0.33871,0.33871,0.006,False,same optimal objective
+monk1,0.02,0.16,8,0.033,False,0.16,8,0.16,0.16,0.2,False,same optimal objective
+monk1,0.01,0.08,8,0.091,False,0.08,8,0.08,0.08,1.096,False,same optimal objective
+monk1,0.005,0.04,8,0.117,False,0.04,8,0.04,0.04,3.818,False,same optimal objective
+monk2,0.05,0.428698,1,0.01,False,0.428698,1,0.428698,0.428698,0.014,False,same optimal objective
+monk2,0.02,0.358935,7,0.095,False,0.358935,7,0.358935,0.358935,0.277,False,same optimal objective
+monk2,0.01,0.265089,20,0.191,False,0.265089,20,0.265089,0.265089,1.813,False,same optimal objective
+monk2,0.005,0.152751,27,0.227,False,0.152751,27,0.152751,0.152751,9.293,False,same optimal objective
+monk3,0.05,0.371311,3,0.006,False,0.371311,3,0.371311,0.371311,0.014,False,same optimal objective
+monk3,0.02,0.242951,6,0.035,False,0.242951,6,0.242951,0.242951,0.194,False,same optimal objective
+monk3,0.01,0.155574,9,0.103,False,0.155574,9,0.155574,0.155574,1.119,False,same optimal objective
+monk3,0.005,0.09459,14,0.128,False,0.09459,14,0.09459,0.09459,4.632,False,same optimal objective
+balance,0.05,0.1284,1,0.0,False,0.1284,1,0.1284,0.1284,0.0,False,same optimal objective
+balance,0.02,0.0984,1,0.001,False,0.0984,1,0.0984,0.0984,0.0,False,same optimal objective
+balance,0.01,0.0884,1,0.077,False,0.0884,1,0.0884,0.0884,0.056,False,same optimal objective
+balance,0.005,0.0834,1,0.612,False,0.0834,1,0.0834,0.0834,5.168,False,same optimal objective
+car,0.05,0.294676,3,0.01,False,0.294676,3,0.294676,0.294676,0.01,False,same optimal objective
+car,0.02,0.204676,3,0.288,False,0.204676,3,0.204676,0.204676,0.815,False,same optimal objective
+car,0.01,0.145231,7,0.53,False,0.145231,7,0.145231,0.145231,4.583,False,same optimal objective
+car,0.005,0.106343,9,1.474,False,0.106343,9,0.106343,0.106343,12.382,False,same optimal objective
+compas_binary,0.05,0.461083,2,0.0,False,0.461083,2,0.461083,0.461083,0.0,False,same optimal objective
+compas_binary,0.02,0.401083,2,0.002,False,0.401083,2,0.401083,0.401083,0.001,False,same optimal objective
+compas_binary,0.01,0.374868,3,0.005,False,0.374868,3,0.374868,0.374868,0.006,False,same optimal objective
+compas_binary,0.005,0.355969,5,0.018,False,0.355969,5,0.355969,0.355969,0.082,False,same optimal objective
+bar7,0.05,0.453894,2,0.001,False,0.453894,2,0.453894,0.453894,0.0,False,same optimal objective
+bar7,0.02,0.371553,3,0.012,False,0.371553,3,0.371553,0.371553,0.018,False,same optimal objective
+bar7,0.01,0.341098,4,0.055,False,0.341098,4,0.341098,0.341098,0.716,False,same optimal objective
+bar7,0.005,0.31862,8,0.46,False,0.31862,8,0.31862,0.31862,4.882,False,same optimal objective
+tictactoe,0.05,0.396555,1,0.017,False,0.396555,1,0.396555,0.396555,0.018,False,same optimal objective
+tictactoe,0.02,0.31833,6,0.693,False,0.31833,6,0.31833,0.31833,1.021,False,same optimal objective
+tictactoe,0.01,0.250752,9,2.932,False,0.250752,9,0.250752,0.250752,7.795,False,same optimal objective
+tictactoe,0.005,0.15428,20,8.642,False,0.15428,20,0.15428,0.15428,47.283,False,same optimal objective
+fico_binary,0.05,0.404044,2,0.002,False,0.404044,2,0.404044,0.404044,0.0,False,same optimal objective
+fico_binary,0.02,0.344044,2,0.037,False,0.344044,2,0.344044,0.344044,0.053,False,same optimal objective
+fico_binary,0.01,0.324044,2,0.587,False,0.324044,2,0.324044,0.324044,2.374,False,same optimal objective
+fico_binary,0.005,0.308651,4,6.623,False,0.308651,4,0.308651,0.308651,29.669,False,same optimal objective
+chudi,0.05,0.25,5,0.023,False,0.25,5,0.25,0.25,3.422,False,same optimal objective
+chudi,0.02,0.1,5,0.56,False,0.1,5,0.1,0.1,40.742,False,same optimal objective
+chudi,0.01,0.05,5,0.017,False,0.05,5,0.05,0.05,74.537,False,same optimal objective
+chudi,0.005,0.025,5,0.018,False,0.025,5,0.025,0.025,81.491,False,same optimal objective
+compas2016,0.05,0.463147,2,0.014,False,0.463147,2,0.463147,0.463147,0.008,False,same optimal objective
+compas2016,0.02,0.402231,3,0.257,False,0.402231,3,0.402231,0.402231,0.348,False,same optimal objective
+compas2016,0.01,0.372231,3,2.517,False,0.372231,3,0.383147,0.335777,300.435,True,"official timed out, ours inside their bounds"
+compas2016,0.005,0.354482,5,8.72,False,0.356076,5,0.373147,0.320777,301.292,True,"official timed out, ours inside their bounds"

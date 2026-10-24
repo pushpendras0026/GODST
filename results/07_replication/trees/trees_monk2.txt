@@ -1,0 +1,48 @@
+Paper: GOSDT 79.3% / 73.5%, DL8.5 76.3% / 70.6%
+
+==== GOSDT (ours), lambda=0.02: 7 leaves, train 79.3%, test 73.5%
+if holding=sword:
+|   predict 0   (12/33)
+else:
+|   if smiling=yes:
+|   |   if jacket=red:
+|   |   |   predict 0   (0/11)
+|   |   else:
+|   |   |   if head=round:
+|   |   |   |   if tie=yes:
+|   |   |   |   |   predict 0   (0/9)
+|   |   |   |   else:
+|   |   |   |   |   predict 1   (7/0)
+|   |   |   else:
+|   |   |   |   predict 1   (13/6)
+|   else:
+|   |   if jacket=red:
+|   |   |   predict 1   (9/2)
+|   |   else:
+|   |   |   predict 0   (8/25)
+
+==== DL8.5 style (ours), depth 3: 8 leaves, train 77.0%, test 67.6%
+if smiling=yes:
+|   if tie=yes:
+|   |   if head=square:
+|   |   |   predict 1   (6/5)
+|   |   else:
+|   |   |   predict 0   (2/19)
+|   else:
+|   |   if jacket=red:
+|   |   |   predict 0   (0/9)
+|   |   else:
+|   |   |   predict 1   (16/8)
+else:
+|   if body=round:
+|   |   if jacket=yellow:
+|   |   |   predict 1   (6/2)
+|   |   else:
+|   |   |   predict 0   (5/13)
+|   else:
+|   |   if jacket=red:
+|   |   |   predict 1   (8/3)
+|   |   else:
+|   |   |   predict 0   (6/27)
+
+==== CART, max 7 leaves: 7 leaves, train 72.6%, test 58.8%

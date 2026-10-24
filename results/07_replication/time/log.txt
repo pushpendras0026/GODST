@@ -1,0 +1,30 @@
+stage: replicate time
+started: 2026-10-23 20:34:00.831049
+settings: {'quick': False, 'dataset': None, 'lam': None, 'depth': None, 'timelimit': None, 'exp': 'time', 'jobs': None, 'memlimit': 10000.0}
+
+---- time to optimality (Fig 18), lambda = 0.005
+24 jobs were already done before, running the other 0
+{'dataset': 'bar7', 'algorithm': 'gosdt', 'seconds': 0.3245065212249756, 'timedOut': False, 'memoryOut': False, 'objective': 0.3186199686356508, 'gap': 0.0}
+{'dataset': 'bar7', 'algorithm': 'gosdt big first', 'seconds': 1.7676670551300049, 'timedOut': False, 'memoryOut': False, 'objective': 0.3186199686356508, 'gap': 0.0}
+{'dataset': 'bar7', 'algorithm': 'osdt', 'seconds': 33.913100719451904, 'timedOut': False, 'memoryOut': False, 'objective': 0.31861996863565073, 'gap': 0.0}
+{'dataset': 'tictactoe', 'algorithm': 'gosdt', 'seconds': 9.306966066360474, 'timedOut': False, 'memoryOut': False, 'objective': 0.15427974947807932, 'gap': 0.0}
+{'dataset': 'tictactoe', 'algorithm': 'gosdt big first', 'seconds': 31.39043688774109, 'timedOut': False, 'memoryOut': False, 'objective': 0.15427974947807932, 'gap': 0.0}
+{'dataset': 'tictactoe', 'algorithm': 'osdt', 'seconds': 98.68834042549133, 'timedOut': True, 'memoryOut': True, 'objective': 0.24437369519832985, 'gap': 0.1851983298538622}
+{'dataset': 'car', 'algorithm': 'gosdt', 'seconds': 1.6124742031097412, 'timedOut': False, 'memoryOut': False, 'objective': 0.1063425925925926, 'gap': 0.0}
+{'dataset': 'car', 'algorithm': 'gosdt big first', 'seconds': 5.5628087520599365, 'timedOut': False, 'memoryOut': False, 'objective': 0.1063425925925926, 'gap': 0.0}
+{'dataset': 'car', 'algorithm': 'osdt', 'seconds': 108.42888712882996, 'timedOut': True, 'memoryOut': True, 'objective': 0.19092592592592594, 'gap': 0.13092592592592595}
+{'dataset': 'compas_binary', 'algorithm': 'gosdt', 'seconds': 0.014964103698730469, 'timedOut': False, 'memoryOut': False, 'objective': 0.35596858259736497, 'gap': 0.0}
+{'dataset': 'compas_binary', 'algorithm': 'gosdt big first', 'seconds': 0.04188871383666992, 'timedOut': False, 'memoryOut': False, 'objective': 0.35596858259736497, 'gap': 0.0}
+{'dataset': 'compas_binary', 'algorithm': 'osdt', 'seconds': 0.13845086097717285, 'timedOut': False, 'memoryOut': False, 'objective': 0.35596858259736497, 'gap': 0.0}
+{'dataset': 'fico_binary', 'algorithm': 'gosdt', 'seconds': 4.558897018432617, 'timedOut': False, 'memoryOut': False, 'objective': 0.308650922650349, 'gap': 0.0}
+{'dataset': 'fico_binary', 'algorithm': 'gosdt big first', 'seconds': 13.362303972244263, 'timedOut': False, 'memoryOut': False, 'objective': 0.308650922650349, 'gap': 0.0}
+{'dataset': 'fico_binary', 'algorithm': 'osdt', 'seconds': 111.0013918876648, 'timedOut': True, 'memoryOut': True, 'objective': 0.31282962042260254, 'gap': 0.04960512477292289}
+{'dataset': 'monk1', 'algorithm': 'gosdt', 'seconds': 0.07374954223632812, 'timedOut': False, 'memoryOut': False, 'objective': 0.04, 'gap': 0.0}
+{'dataset': 'monk1', 'algorithm': 'gosdt big first', 'seconds': 0.02138042449951172, 'timedOut': False, 'memoryOut': False, 'objective': 0.04, 'gap': 0.0}
+{'dataset': 'monk1', 'algorithm': 'osdt', 'seconds': 0.15264034271240234, 'timedOut': False, 'memoryOut': False, 'objective': 0.04, 'gap': 0.0}
+{'dataset': 'monk2', 'algorithm': 'gosdt', 'seconds': 0.1468486785888672, 'timedOut': False, 'memoryOut': False, 'objective': 0.15275147928994082, 'gap': 0.0}
+{'dataset': 'monk2', 'algorithm': 'gosdt big first', 'seconds': 0.7136631011962891, 'timedOut': False, 'memoryOut': False, 'objective': 0.15275147928994084, 'gap': 0.0}
+{'dataset': 'monk2', 'algorithm': 'osdt', 'seconds': 113.83679175376892, 'timedOut': True, 'memoryOut': True, 'objective': 0.383698224852071, 'gap': 0.313698224852071}
+{'dataset': 'monk3', 'algorithm': 'gosdt', 'seconds': 0.09040331840515137, 'timedOut': False, 'memoryOut': False, 'objective': 0.09459016393442622, 'gap': 0.0}
+{'dataset': 'monk3', 'algorithm': 'gosdt big first', 'seconds': 0.31536030769348145, 'timedOut': False, 'memoryOut': False, 'objective': 0.09459016393442624, 'gap': 0.0}
+{'dataset': 'monk3', 'algorithm': 'osdt', 'seconds': 99.15276765823364, 'timedOut': True, 'memoryOut': True, 'objective': 0.1433606557377049, 'gap': 0.07516393442622948}

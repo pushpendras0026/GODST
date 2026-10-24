@@ -1,0 +1,13 @@
+dataset,features,depth,totalTrees,treesChecked,finished,seconds,estimatedSecondsForAll,mistakes,trainAccuracy,leaves
+monk1,11,1,12,12,True,0.0,,33,0.7339,2
+monk1,11,2,1585,1585,True,0.002,,22,0.8226,4
+monk1,11,3,27634476,27634476,True,48.753,,11,0.9113,5
+monk2,11,1,12,12,True,0.0,,64,0.6213,1
+monk2,11,2,1585,1585,True,0.001,,57,0.6627,4
+monk2,11,3,27634476,27634476,True,51.702,,41,0.7574,7
+monk3,11,1,12,12,True,0.0,,40,0.6721,2
+monk3,11,2,1585,1585,True,0.001,,27,0.7787,3
+monk3,11,3,27634476,27634476,True,45.238,,17,0.8607,7
+tictactoe,18,1,19,19,True,0.002,,288,0.6994,2
+tictactoe,18,2,6499,6499,True,0.009,,282,0.7056,3
+tictactoe,18,3,760266019,269805986,False,600.007,1690.7,216,0.7745,7

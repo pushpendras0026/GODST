@@ -1,0 +1,10 @@
+if f2<=2.025:
+|   if f2<=0.935:
+|   |   predict 0
+|   else:
+|   |   predict 1
+else:
+|   if f1<=5.04:
+|   |   predict 0
+|   else:
+|   |   predict 1

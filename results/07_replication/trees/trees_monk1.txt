@@ -1,0 +1,45 @@
+Paper: GOSDT 100% train / 100% test, BinOCT 90.9% / 84.0%
+
+==== GOSDT (ours), lambda=0.03: 8 leaves, train 100.0%, test 100.0%
+if jacket=red:
+|   predict 1   (24/0)
+else:
+|   if head=round:
+|   |   if body=round:
+|   |   |   predict 1   (6/0)
+|   |   else:
+|   |   |   predict 0   (0/26)
+|   else:
+|   |   if head=square:
+|   |   |   if body=square:
+|   |   |   |   predict 1   (9/0)
+|   |   |   else:
+|   |   |   |   predict 0   (0/15)
+|   |   else:
+|   |   |   if body=round:
+|   |   |   |   predict 0   (0/3)
+|   |   |   else:
+|   |   |   |   if body=square:
+|   |   |   |   |   predict 0   (0/4)
+|   |   |   |   else:
+|   |   |   |   |   predict 1   (12/0)
+
+==== DL8.5 style (ours), depth 3: 6 leaves, train 90.9%, test 92.0%
+if head=round:
+|   if body=round:
+|   |   predict 1   (6/0)
+|   else:
+|   |   if jacket=red:
+|   |   |   predict 1   (5/0)
+|   |   else:
+|   |   |   predict 0   (0/26)
+else:
+|   if body=round:
+|   |   if jacket=red:
+|   |   |   predict 1   (5/0)
+|   |   else:
+|   |   |   predict 0   (0/13)
+|   else:
+|   |   predict 1   (35/9)
+
+==== CART, max 8 leaves: 8 leaves, train 92.9%, test 92.0%

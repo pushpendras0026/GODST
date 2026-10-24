@@ -1,0 +1,15 @@
+writing results to /home/p_2626/ML_LAB_SEM5/ML_lab/results/07_replication
+writing results to /home/p_2626/ML_LAB_SEM5/ML_lab/results/07_replication/trees
+---- example trees (Fig 19, 20, 21), fold 0
+{'dataset': 'monk1', 'targetLeaves': 8, 'model': 'GOSDT (ours), lambda=0.03', 'leaves': 8, 'trainAccuracy': 1.0, 'testAccuracy': 1.0}
+{'dataset': 'monk1', 'targetLeaves': 8, 'model': 'DL8.5 style (ours), depth 3', 'leaves': 6, 'trainAccuracy': 0.9091, 'testAccuracy': 0.92}
+{'dataset': 'monk1', 'targetLeaves': 8, 'model': 'CART, max 8 leaves', 'leaves': 8, 'trainAccuracy': 0.9293, 'testAccuracy': 0.92}
+{'dataset': 'monk2', 'targetLeaves': 7, 'model': 'GOSDT (ours), lambda=0.02', 'leaves': 7, 'trainAccuracy': 0.7926, 'testAccuracy': 0.7353}
+{'dataset': 'monk2', 'targetLeaves': 7, 'model': 'DL8.5 style (ours), depth 3', 'leaves': 8, 'trainAccuracy': 0.7704, 'testAccuracy': 0.6765}
+{'dataset': 'monk2', 'targetLeaves': 7, 'model': 'CART, max 7 leaves', 'leaves': 7, 'trainAccuracy': 0.7259, 'testAccuracy': 0.5882}
+{'dataset': 'tictactoe', 'targetLeaves': 16, 'model': 'GOSDT (ours), lambda=0.01', 'leaves': 10, 'trainAccuracy': 0.8603, 'testAccuracy': 0.7969}
+{'dataset': 'tictactoe', 'targetLeaves': 16, 'model': 'GOSDT (ours), lambda=0.009', 'leaves': 20, 'trainAccuracy': 0.9569, 'testAccuracy': 0.901}
+{'dataset': 'tictactoe', 'targetLeaves': 16, 'model': 'DL8.5 style (ours), depth 4', 'leaves': 15, 'trainAccuracy': 0.8695, 'testAccuracy': 0.7969}
+{'dataset': 'tictactoe', 'targetLeaves': 16, 'model': 'CART, max 16 leaves', 'leaves': 16, 'trainAccuracy': 0.8956, 'testAccuracy': 0.875}
+trees finished in 133.5 seconds
+stage replicate finished in 134.9 seconds
