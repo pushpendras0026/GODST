@@ -1,10 +1,9 @@
 # GOSDT from scratch (ML Lab project)
 
-We implement the paper **"Generalized and Scalable Optimal Sparse Decision Trees"** (Lin, Zhong, Hu, Rudin, Seltzer, ICML 2020) from scratch in plain Python. We build it step by step: brute force, then dynamic programming, then the sparsity objective, then bounds, then the full GOSDT algorithm. Each step can be run and checked on its own.
+We implement the paper **"Generalized and Scalable Optimal Sparse Decision Trees"** (Lin, Zhong, Hu, Rudin, Seltzer, ICML 2020) from scratch in  Python. We build it step by step: brute force, then dynamic programming, then the sparsity objective, then bounds, then the full GOSDT algorithm. Each step can be run and checked on its own.
 
 On top of it we add two ideas of our own to make the search faster: depth guessing (a depth limit together with the lambda objective) and lower bound guessing (use the mistakes of a boosted model as the lower bound of a subproblem). We also try some feature engineering and different ways to turn numbers into 0/1 features, on the paper datasets and 5 new ones.
 
-We do not use the authors' code. Our code only uses numpy, pandas, scikit-learn (only for baseline models later) and matplotlib.
 
 ## 1. Setup (one time)
 
@@ -18,12 +17,12 @@ This makes a virtual environment in `.venv` and installs `requirements.txt`. Aft
 
 ```
 python run.py --stage check       # do all steps give the same optimal answer? (fast, run this first)
-python run.py --stage brute       # step 1  brute force
-python run.py --stage dp          # step 2  dynamic programming with memo
-python run.py --stage sparsity    # step 3  objective = loss + lambda * leaves
-python run.py --stage bounds      # step 4  bounds from the paper
-python run.py --stage gosdt       # step 5  full GOSDT (priority queue, graph, subset bound)
-python run.py --stage objectives  # step 6  balanced accuracy, weighted accuracy, F1, AUC, partial AUC
+python run.py --stage brute       # step 1 brute force
+python run.py --stage dp          # step 2 dynamic programming with memo
+python run.py --stage sparsity    # step 3 objective = loss + lambda * leaves
+python run.py --stage bounds      # step 4 bounds from the paper
+python run.py --stage gosdt       # step 5 full GOSDT (priority queue, graph, subset bound)
+python run.py --stage objectives  # step 6 balanced accuracy, weighted accuracy, F1, AUC, partial AUC
 python run.py --stage replicate   # the experiments of the paper (all parts, or one with --exp)
 python run.py --stage features    # our work: feature engineering, 7 ways to binarize numbers
 python run.py --stage all         # all of the above, one after another
@@ -51,15 +50,15 @@ Optional flags for any stage:
 | `--timelimit 60` | time limit in seconds for one run |
 | `--exp sparsity` | which part of the replicate stage to run |
 | `--jobs 4` | how many runs at the same time (replicate stage), default is all cores but two |
-| `--memlimit 3000` | memory limit for one run in MB (default 3000). A run that needs more stops and is written as "memory out" |
+| `--memlimit 3000` | memory limit for one run in MB (default 3000). A run that needs more stops and is written as "memory out" cause we run on smaller machine. |
 
 Keep `jobs x memlimit` below the memory of your machine. Example for a 16 GB laptop: `--jobs 3 --memlimit 3000`.
 
-The replicate parts save every finished job in `results/07_replication/<part>/checkpoints/`. If a long run stops in the middle, just start the same command again and it goes on from there. Delete that `checkpoints` folder if you want to run everything again from zero (for example after changing the code).
+The replicate parts save every finished job in `results/07_replication/<part>/checkpoints/`. Delete that `checkpoints` folder if you want to run everything again from zero (for example after changing the code).
 
 Example: `python run.py --stage gosdt --dataset tictactoe --lam 0.005`
 
-How long things take (8 core laptop): every stage with `--quick` takes under a minute. The full runs of stages 1 to 6 take from a few seconds (check, objectives) to about 40 minutes (gosdt). The full replicate parts `sparsity`, `time` and `scale` use the time limits of the paper (5 or 30 minutes per run), so they take a few hours.
+How long things take (8 core laptop): every stage with `--quick` takes under a minute. The full runs of stages 1 to 6 take from a few seconds (check, objectives) to about 40 minutes (gosdt). 
 
 ## 3. Running stages at the same time
 
@@ -142,12 +141,5 @@ Each step file can also be run alone for a tiny demo, for example `python code/s
 
 ## 6. Data
 
-The datasets are in `data/paper/` (GOSDT paper) and `data/new/` (our new datasets). Where each one comes from is written in `data/sources.md`. No internet is needed.
+The datasets are in `data/paper/` (GOSDT paper) and `data/new/` (our new datasets). Where each one comes from is written in `data/sources.md`.
 
-## 7. Status
-
-- [x] Phase 1: steps 1 to 5, checks, and the comparison with the official package
-- [x] Phase 2: other objectives (balanced accuracy, F1, AUC), our DL8.5 style and OSDT style baselines, replication of the paper experiments
-- [x] Phase 3: our speed ups (depth guessing and lower bound guessing)
-- [x] Phase 4: feature engineering and binarization methods
-- [ ] Phase 5: report
