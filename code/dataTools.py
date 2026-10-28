@@ -34,25 +34,15 @@ datasetInfo = {
     "iris_setosa": {"file": "paper/iris.csv", "positive": "Iris-setosa"},
     "iris_versicolor": {"file": "paper/iris.csv", "positive": "Iris-versicolor"},
     "iris_virginica": {"file": "paper/iris.csv", "positive": "Iris-virginica"},
-    # datasets of the extension paper (McTavish et al. 2022, Table 1)
-    "spiral": {"file": "extension/spiral.csv"},
-    "ext_compas": {"file": "extension/compas.csv"},
-    "broward": {"file": "extension/broward.csv"},
-    "ext_fico": {"file": "extension/fico.csv"},
-    "takeaway": {"file": "extension/takeaway.csv"},
-    "restaurant": {"file": "extension/restaurant.csv"},
-    # NEW datasets, not used in either paper (data/downloadNewData.py, data/sources.md)
+    # NEW datasets, not used in the paper (data/downloadNewData.py, data/sources.md)
     "breast_cancer": {"file": "new/breast_cancer.csv"},
     "pima": {"file": "new/pima.csv"},
     "banknote": {"file": "new/banknote.csv"},
     "heart": {"file": "new/heart.csv"},
-    "german_credit": {"file": "new/german_credit.csv"},
-    "mushroom": {"file": "new/mushroom.csv"},
     "titanic": {"file": "new/titanic.csv"},
-    "spambase": {"file": "new/spambase.csv"},
 }
 
-newDatasets = ["breast_cancer", "pima", "banknote", "heart", "german_credit", "mushroom", "titanic", "spambase"]
+newDatasets = ["breast_cancer", "pima", "banknote", "heart", "titanic"]
 
 
 def loadDataset(name):
@@ -123,7 +113,7 @@ def getFold(name, foldNumber, k=5, method="all", seed=0):
 
 
 def getRawFold(name, foldNumber, k=5, seed=0):
-    # same fold, but the raw columns (not 0/1 yet). Threshold guessing needs the raw numbers.
+    # same fold, but the raw columns (not 0/1 yet). Part C makes its own 0/1 columns from them.
     rawX, y = loadDataset(name)
     trainIdx, testIdx = foldRows(len(y), foldNumber, k, seed)
     rawTrain = rawX.iloc[trainIdx].reset_index(drop=True)

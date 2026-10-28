@@ -9,7 +9,7 @@
 #   "all"    : mid point between every two neighbour values (paper Sec 2)
 #   "bucket" : same as "all" but we skip the mid point when both neighbour values
 #              have only one and the same label (this is bucketization, paper Sec 3)
-#   "given"  : thresholds given from outside (threshold guessing, guessThresholds.py)
+#   "given"  : thresholds given from outside (for example medical cut points, featureMaker.py)
 #   "quantile5", "quantile10" : thresholds at the quantiles, 5 or 10 bins with about the same rows
 
 import numpy as np
@@ -76,8 +76,7 @@ def makeEncoder(rawX, y, method="all", dropValue=None, givenThresholds=None):
             kind = "number"
 
         if kind == "copy":
-            # with given thresholds (threshold guessing) we only keep a 0/1 column if the
-            # reference model used it
+            # with given thresholds we only keep a 0/1 column if a threshold was given for it
             if method == "given" and col not in givenThresholds:
                 continue
             rules.append({"column": col, "type": "copy", "name": str(col)})

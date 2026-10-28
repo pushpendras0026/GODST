@@ -25,14 +25,14 @@
 #
 # At the end we read the tree out of the graph (Algorithm 6).
 #
-# EXTENSION (McTavish et al. 2022), both off by default, so step 5 is the plain paper method:
-#   depthBudget          : idea 2, depth guessing. A problem is now (rows, depth left) and a
-#                          problem with depth left 0 must be a leaf (their Eq. 3)
-#   referencePredictions : idea 3, lower bound guessing. The mistakes of a reference model (GBDT)
-#                          on the rows of a problem are used as its lower bound (their Eq. 4).
+# OUR ADDITIONS, all off by default, so step 5 alone is the plain paper method:
+#   depthBudget          : depth guessing (guessDepth.py). A problem is now (rows, depth left) and a
+#                          problem with depth left 0 must be a leaf, so we minimize
+#                          loss + lambda * leaves with depth <= d
+#   referencePredictions : lower bound guessing (guessLowerBound.py). The mistakes of a reference
+#                          model (GBDT) on the rows of a problem are used as its lower bound.
 #                          This is a GUESS, not a proof: a problem counts as solved as soon as we
 #                          find a subtree as good as the reference model on those rows.
-# OUR ADDITION (also off by default):
 #   warmStart            : build a quick greedy tree first and use its objective as the first upper
 #                          bound of the root (OSDT also starts from a greedy tree). The answer is the
 #                          same, but if the search must stop early we return at least this tree.
@@ -59,7 +59,7 @@ class Problem:
         self.leafObjective = 0.0
         self.lb = 0.0
         self.ub = 0.0
-        self.depthLeft = None     # only used with a depth budget (extension)
+        self.depthLeft = None     # only used with a depth budget (depth guessing)
         self.mustBeLeaf = False
         self.featuresFromParent = []
         self.splitFeatures = []
@@ -125,7 +125,7 @@ class GosdtSearch:
         # the smallest loss we think is possible on these rows
         lossFloor = eqLoss
         if self.useReference:
-            # extension idea 3: the reference model's mistakes here are our guess (their Eq. 4)
+            # lower bound guessing: the reference model's mistakes on these rows are our guess
             refLoss = data["posWeight"] * (rows & self.refWrongPosMask).bit_count()
             refLoss = refLoss + data["negWeight"] * (rows & self.refWrongNegMask).bit_count()
             if refLoss > lossFloor:
@@ -134,13 +134,13 @@ class GosdtSearch:
 
         # note: if all rows are the same (one equivalence class) then eqLoss == leafLoss,
         # so the first rule below already makes it a leaf.
-        # With the reference guess this rule is their step 1: "if ub <= lbguess + lambda, done"
+        # With the reference guess this rule becomes: "if ub <= lbguess + lambda, done"
         if p.leafObjective <= splitLowerBound:
             p.mustBeLeaf = True
         if leafLoss <= lam:
             p.mustBeLeaf = True
         if depthLeft is not None and depthLeft <= 0:
-            # extension idea 2: no depth left, so it has to be a leaf
+            # depth guessing: no depth left, so it has to be a leaf
             p.mustBeLeaf = True
 
         if p.mustBeLeaf:

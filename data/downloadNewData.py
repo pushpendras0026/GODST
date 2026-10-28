@@ -1,5 +1,5 @@
 # downloadNewData.py
-# Downloads the NEW datasets (not used in the GOSDT paper or the extension paper) one time and
+# Downloads the NEW datasets (not used in the GOSDT paper) one time and
 # saves them as csv in data/new/. The csv files are already in the project, so you only need
 # this if you want to see where they come from or make them again:
 #       python data/downloadNewData.py
@@ -48,21 +48,9 @@ save("banknote", X, y, "2", "1 = class 2 (forged), OpenML 1462")
 X, y = fromOpenml(53)
 save("heart", X, y, "present", "1 = heart disease present, OpenML 53")
 
-# German credit, OpenML 31
-X, y = fromOpenml(31)
-save("german_credit", X, y, "bad", "1 = bad credit risk, OpenML 31")
-
-# mushroom, OpenML 24. The column stalk-root has many missing values, so we drop that column
-X, y = fromOpenml(24)
-X = X.drop(columns=["stalk-root"])
-save("mushroom", X, y, "p", "1 = poisonous, OpenML 24, column stalk-root removed")
-
 # Titanic, OpenML 40945. We keep only columns known before the trip
 # (boat and body would tell the answer, name/ticket/cabin are ids)
 X, y = fromOpenml(40945)
 X = X[["pclass", "sex", "age", "sibsp", "parch", "fare", "embarked"]]
 save("titanic", X, y, "1", "1 = survived, OpenML 40945, 7 columns")
 
-# spambase, OpenML 44 (57 word and character frequencies)
-X, y = fromOpenml(44)
-save("spambase", X, y, "1", "1 = spam, OpenML 44")

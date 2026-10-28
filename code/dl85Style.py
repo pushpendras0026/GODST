@@ -8,8 +8,8 @@
 #     so next time we see it with the same or smaller ub we can stop right away
 # The main difference to GOSDT (paper Sec 4): DL8.5 solves one subproblem fully before the next
 # one (blocking calls), it needs a depth limit, and it does not penalize leaves.
-# Extension: with referencePredictions, the mistakes of a reference model are used as the lower
-# bound of every node (lower bound guessing, McTavish et al. 2022), like their DL8.5 version.
+# Our addition: with referencePredictions, the mistakes of a reference model are used as the lower
+# bound of every node (lower bound guessing, the same idea as in step5_gosdt.py).
 
 import sys
 import time
@@ -51,7 +51,7 @@ def solveNode(rows, depthLeft, ub, state):
     eqMistakes = (rows & data["minorityPosMask"]).bit_count() + (rows & data["minorityNegMask"]).bit_count()
     floor = eqMistakes
     if state["refWrongMask"] is not None:
-        # extension idea 3 (lower bound guessing): we hope for no better than the reference model
+        # lower bound guessing: we hope for no better than the reference model
         refMistakes = (rows & state["refWrongMask"]).bit_count()
         if refMistakes > floor:
             floor = refMistakes

@@ -198,7 +198,7 @@ def runStage(settings):
             rows.append({"test": "dl85_" + str(trial), "n": n, "m": m, "depth": depth,
                          "dpMistakes": a["mistakes"], "dl85Mistakes": b["mistakes"], "pass": ok})
 
-    # extension: depth budget and lower bound guessing
+    # our additions: depth budget and lower bound guessing
     numExt = 15 if settings.get("quick") else 60
     for trial in range(numExt):
         X, y = randomDataset(rng)
@@ -213,18 +213,18 @@ def runStage(settings):
         # reference = true labels: the guess is no stronger than the normal bound, same answer
         perfect = step5_gosdt.gosdt(X, y, lam, depthBudget=depth, referencePredictions=y)
         ok = ok and same(expected, perfect["objective"])
-        # reference = predictions of the optimal tree: Thm 4.3 says the guessed tree is optimal too
+        # reference = predictions of the optimal tree: our guarantee says the guessed tree is optimal too
         bestPred = np.array(treeTools.predictAll(exact["tree"], X))
         fromBest = step5_gosdt.gosdt(X, y, lam, depthBudget=depth, referencePredictions=bestPred)
         ok = ok and same(expected, fromBest["objective"])
-        # noisy reference: the guessed tree must still respect the Thm 4.3 bound
+        # noisy reference: the guessed tree must still respect our guarantee bound
         noisy = y.copy()
         for i in range(len(noisy)):
             if rng.rand() < 0.2:
                 noisy[i] = 1 - noisy[i]
         guessed = step5_gosdt.gosdt(X, y, lam, depthBudget=depth, referencePredictions=noisy)
         guessedValue = treeTools.objectiveOf(guessed["tree"], X, y, lam)
-        bound = guessLowerBound.theorem43Bound(noisy, X, y, exact["tree"], lam)
+        bound = guessLowerBound.guaranteeBound(noisy, X, y, exact["tree"], lam)
         ok = ok and guessedValue <= bound + 1e-9 and treeTools.treeDepth(guessed["tree"]) <= depth
         # our greedy warm start must not change the optimal answer
         warm = step5_gosdt.gosdt(X, y, lam, depthBudget=depth, warmStart=True)
@@ -235,10 +235,10 @@ def runStage(settings):
         ok = ok and d1["mistakes"] == d2["mistakes"]
         if not ok:
             failures = failures + 1
-        rows.append({"test": "extension" + str(trial), "n": X.shape[0], "m": X.shape[1], "lam": lam, "depth": depth,
+        rows.append({"test": "guessing" + str(trial), "n": X.shape[0], "m": X.shape[1], "lam": lam, "depth": depth,
                      "exhaustiveWithDepth": expected, "gosdtDepth": exact["objective"],
                      "guessPerfect": perfect["objective"], "guessFromBest": fromBest["objective"],
-                     "guessNoisy": guessedValue, "thm43Bound": bound, "pass": ok})
+                     "guessNoisy": guessedValue, "guaranteeBound": bound, "pass": ok})
 
     # our feature engineering helpers
     for trial in range(10):

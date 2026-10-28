@@ -1,16 +1,17 @@
 # featureMaker.py
 # OUR feature engineering (Part C of the project).
 #
-# 1. oneHotText          : text columns -> one 0/1 column per value (models and GBDT need numbers)
+# 1. oneHotText          : text columns -> one 0/1 column per value (scikit-learn models need numbers)
 # 2. equalityFeatures    : for two text columns with the SAME set of values, a new 0/1 column
 #                          "a==b". The GOSDT paper itself says (App I.9) that monk1's true rule is
 #                          "jacket = red OR head = body", but their encoding can not say head = body,
 #                          so the tree needs 8 leaves. With this feature it should need only 3.
 # 3. monkToText          : the monk files are already 0/1 (k-1 columns per attribute), this puts
 #                          them back to text columns so we can make equality features
-# 4. domainThresholds    : thresholds a doctor would use (Pima diabetes), instead of guessed ones
+# 4. domainThresholds    : thresholds a doctor would use (Pima diabetes), instead of data driven ones
 # 5. mutualInformation   : a simple filter, keep the k binary columns with the most information
-#                          about the label (we compare it with GBDT column elimination)
+#                          about the label (as many columns as 5 quantile bins give, but chosen
+#                          from all thresholds)
 
 import math
 
