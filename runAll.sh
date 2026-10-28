@@ -32,8 +32,8 @@ for part in bucket trees sparsity time scale; do
     $PY run.py --stage replicate --exp $part --jobs $JOBS --memlimit $MEMLIMIT "$@" > results/console/replicate_$part.txt 2>&1
 done
 
-# the extension stages and our own stages (they share finished runs, so one after another is best)
-for stage in thresh lbguess depth allguess ablation features newdata compare; do
+# our own stage
+for stage in features; do
     echo "starting $stage"
     $PY run.py --stage $stage --jobs $JOBS --memlimit $MEMLIMIT "$@" > results/console/$stage.txt 2>&1
 done

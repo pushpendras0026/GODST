@@ -3,7 +3,7 @@
 #   A. equality features for monk ("head == body"), the GOSDT paper App I.9 says its encoding
 #      can not express monk1's true rule, so it needs 8 leaves
 #   B. how to turn numbers into 0/1 features: all thresholds, bucketization, quantile bins,
-#      GBDT guessed thresholds, mutual information selection, and medical cut points (Pima)
+#      mutual information selection, and medical cut points (Pima)
 
 import os
 
@@ -48,9 +48,9 @@ def runStage(settings):
     expTools.saveText(text, folder, "monk1_trees.txt")
 
     # ---------- B. binarization methods
-    numberSets = expTools.pickList(["ext_compas", "broward", "pima", "breast_cancer", "banknote", "titanic", "heart"],
+    numberSets = expTools.pickList(["pima", "breast_cancer", "banknote", "titanic", "heart"],
                                    ["pima", "banknote"], settings, "dataset")
-    methods = ["all", "bucket", "quantile5", "quantile10", "guess", "mi"]
+    methods = ["all", "bucket", "quantile5", "quantile10", "mi"]
     jobs = []
     for d in numberSets:
         for fold in range(folds):
@@ -80,7 +80,7 @@ def runStage(settings):
         expTools.log(folder, str(s))
 
     names = {"all": "all thresholds", "bucket": "bucketization", "quantile5": "5 quantile bins",
-             "quantile10": "10 quantile bins", "guess": "GBDT guess", "mi": "mutual information", "domain": "medical cut points"}
+             "quantile10": "10 quantile bins", "mi": "mutual information", "domain": "medical cut points"}
     for column, yLabel, logY in [("seconds", "seconds (median, log)", True), ("testAccuracy", "test accuracy (median)", False),
                                  ("binaryFeatures", "binary features (log)", True)]:
         series = {}
@@ -104,7 +104,7 @@ def runStage(settings):
 
     text = ""
     for r in rows:
-        if r["dataset"] == "pima" and r["fold"] == 0 and r["binarize"] in ["domain", "guess"]:
+        if r["dataset"] == "pima" and r["fold"] == 0 and r["binarize"] in ["domain", "quantile10"]:
             text = text + "==== Pima fold 0, " + names[r["binarize"]] + ": " + str(r.get("leaves")) + " leaves, test accuracy "
             text = text + str(r.get("testAccuracy")) + "\n" + r.get("treeText", "") + "\n"
     expTools.saveText(text, folder, "pima_trees.txt")

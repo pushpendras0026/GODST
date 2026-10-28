@@ -9,14 +9,7 @@
 #   python run.py --stage gosdt        step 5, full GOSDT
 #   python run.py --stage objectives   step 6, other objectives (balanced acc, F1, AUC, ...)
 #   python run.py --stage replicate    the experiments of the paper (pick one with --exp)
-#   python run.py --stage thresh       extension 1: threshold guessing (McTavish et al. 2022)
-#   python run.py --stage depth        extension 2: depth guessing
-#   python run.py --stage lbguess      extension 3: lower bound guessing
-#   python run.py --stage allguess     all three guesses together
-#   python run.py --stage newdata      our work: datasets that neither paper used
 #   python run.py --stage features     our work: feature engineering and binarization methods
-#   python run.py --stage compare      our work: comparison with other models
-#   python run.py --stage ablation     our work: which reference model, our multi reference idea
 #   python run.py --stage all          everything above, one after another
 #   python run.py --stage official     optional, compare with the authors package (pip install gosdt)
 #
@@ -44,7 +37,7 @@ sys.path.insert(0, os.path.join(projectFolder, "code"))
 sys.path.insert(0, os.path.join(projectFolder, "experiments"))
 
 stageList = ["check", "brute", "dp", "sparsity", "bounds", "gosdt", "objectives", "replicate",
-             "thresh", "depth", "lbguess", "allguess", "newdata", "features", "compare", "ablation"]
+             "features"]
 # "official" is not part of "all" because it needs the extra package (pip install gosdt)
 extraStages = ["official"]
 laterStages = ["report"]
@@ -77,21 +70,9 @@ def runOneStage(stage, settings):
     elif stage == "replicate":
         import expReplicate
         expReplicate.runStage(settings)
-    elif stage in ["thresh", "depth", "lbguess", "allguess"]:
-        import expExtension
-        expExtension.runStage(settings, stage)
-    elif stage == "newdata":
-        import expNewData
-        expNewData.runStage(settings)
     elif stage == "features":
         import expFeatures
         expFeatures.runStage(settings)
-    elif stage == "compare":
-        import expCompare
-        expCompare.runStage(settings)
-    elif stage == "ablation":
-        import expAblation
-        expAblation.runStage(settings)
     elif stage == "official":
         import expOfficial
         expOfficial.runStage(settings)

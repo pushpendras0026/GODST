@@ -4,7 +4,7 @@
 #   cart    : greedy decision tree (Breiman et al. 1984), the paper uses it as the greedy baseline
 #   cartCv  : CART where the depth is chosen by 3 fold cross validation on the train part
 #   rf      : random forest, 100 trees
-#   gbdt    : gradient boosting, 100 trees of depth 3 (the black box of the extension paper)
+#   gbdt    : gradient boosting, 100 trees of depth 3 (also our reference model for lower bound guessing)
 #   ada     : AdaBoost, 100 small trees
 #   logreg  : logistic regression (numbers scaled first)
 #   knn     : 5 nearest neighbours (numbers scaled first)

@@ -1,16 +1,15 @@
 # ourJobs.py
-# One run of Part C (our own work), described by a small set of settings. All four stages
-# (newdata, features, compare, ablation) use this, and they share the folder of finished runs
+# One run of Part C (our own work), described by a small set of settings. The features stage
+# uses this, and saves every finished run in the folder
 # results/our_jobs, so a run that two stages need is only done once.
 #
 # settings of one job:
 #   dataset, fold      which data and which of the 5 folds
 #   model              gosdt, dl85, or a scikit-learn baseline (cart, cartCv, rf, gbdt, ada, logreg, knn, svm)
 #   features           none / text / equality   (text and equality are for the monk data)
-#   binarize           all / bucket / quantile5 / quantile10 / guess / domain / mi
-#   guessModel         ensemble used for threshold guessing: gbdt (paper), rf, ada, extra
+#   binarize           all / bucket / quantile5 / quantile10 / domain / mi
 #   lbRef              reference for lower bound guessing: None, gbdt, rf, ada, extra,
-#                      intersection, union (our idea), weak, random
+#                      intersection, union, weak, random
 #   lam, depth         lambda and depth limit (depth 0 = no limit)
 #   lamChoice          "fixed", or "cv" = choose lambda (gosdt) / depth (dl85) by 3 fold CV on the train part
 #   timeLimit
@@ -25,24 +24,22 @@ import dataTools
 import expTools
 import featureMaker
 import guessLowerBound
-import guessThresholds
 import otherModels
 import dl85Style
 import step5_gosdt
 import treeTools
 
-# GBDT size for guessing: the extension paper values for its datasets, (20, 3) for the new ones
-guessSize = {"spiral": (20, 3), "ext_compas": (20, 3), "broward": (40, 1), "ext_fico": (40, 1),
-             "takeaway": (50, 2), "restaurant": (50, 2)}
+# size of the reference model for lower bound guessing: 20 trees of depth 3
+referenceSize = (20, 3)
 blackBoxes = ["cartCv", "rf", "gbdt", "ada", "logreg", "knn", "svm"]
 cvLambdas = [0.01, 0.005, 0.002, 0.001]
 cvDepths = [2, 3, 4, 5]
 
 
-def makeJob(dataset, fold, model="gosdt", features="none", binarizeMethod="guess", guessModel="gbdt",
+def makeJob(dataset, fold, model="gosdt", features="none", binarizeMethod="quantile10",
             lbRef=None, lam=0.001, depth=5, lamChoice="fixed", timeLimit=600, warmStart=False):
     spec = {"dataset": dataset, "fold": fold, "model": model, "features": features, "binarize": binarizeMethod,
-            "guessModel": guessModel, "lbRef": lbRef, "lam": lam, "depth": depth, "lamChoice": lamChoice,
+            "lbRef": lbRef, "lam": lam, "depth": depth, "lamChoice": lamChoice,
             "timeLimit": timeLimit}
     if warmStart:
         # only written when it is on, so the names of all the older saved runs stay the same
@@ -77,16 +74,10 @@ def prepareRaw(spec):
 
 def makeBinary(spec, numTrain, yTrain, numTest):
     method = spec["binarize"]
-    numTrees, treeDepth = guessSize.get(spec["dataset"], (20, 3))
     info = {"guessSeconds": 0.0}
-    if method == "guess" or method == "mi":
-        Xtrain, Xtest, names, groups, guessInfo = guessThresholds.binarizeWithGuess(
-            numTrain, yTrain, numTest, numTrees, treeDepth, modelKind=spec["guessModel"])
-        info["guessSeconds"] = guessInfo["seconds"]
-        if method == "guess":
-            return Xtrain, Xtest, names, groups, info
-        # mutual information: keep as many columns as the GBDT kept, but chosen by MI from all thresholds
-        k = Xtrain.shape[1]
+    if method == "mi":
+        # mutual information: keep as many columns as 5 quantile bins give, but chosen by MI from all thresholds
+        k = binarize.applyEncoder(binarize.makeEncoder(numTrain, yTrain, "quantile5"), numTrain)[0].shape[1]
         encoder = binarize.makeEncoder(numTrain, yTrain, "all")
         allTrain, allNames, allGroups = binarize.applyEncoder(encoder, numTrain)
         allTest = binarize.applyEncoder(encoder, numTest)[0]
@@ -120,7 +111,7 @@ def makeReference(spec, Xtrain, yTrain):
     lbRef = spec["lbRef"]
     if lbRef is None:
         return None
-    numTrees, treeDepth = guessSize.get(spec["dataset"], (20, 3))
+    numTrees, treeDepth = referenceSize
     if lbRef in ["gbdt", "rf", "ada", "extra"]:
         return guessLowerBound.referencePredictions(Xtrain, yTrain, numTrees, treeDepth, modelKind=lbRef)
     if lbRef in ["intersection", "union"]:
@@ -129,7 +120,7 @@ def makeReference(spec, Xtrain, yTrain):
             predictionList.append(guessLowerBound.referencePredictions(Xtrain, yTrain, numTrees, treeDepth, modelKind=kind))
         return guessLowerBound.combineReferences(predictionList, yTrain, lbRef)
     if lbRef == "weak":
-        # a deliberately weak reference: 2 stumps (like their Sec 5.3, App D)
+        # a deliberately weak reference: 2 stumps
         return guessLowerBound.referencePredictions(Xtrain, yTrain, 2, 1)
     if lbRef == "random":
         # a reference that learned nothing: trained on shuffled labels

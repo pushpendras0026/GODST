@@ -1,5 +1,5 @@
 stage: check
-started: 2026-10-23 23:56:06.966298
+started: 2026-10-28 14:07:26.768043
 settings: {'quick': False, 'dataset': None, 'lam': None, 'depth': None, 'timelimit': None, 'exp': None, 'jobs': None, 'memlimit': 3000}
 
 tests run: 600   failed: 0
